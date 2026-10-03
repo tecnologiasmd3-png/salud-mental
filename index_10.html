@@ -1,0 +1,1032 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Competencias en salud pública: salud mental en la infancia y la adolescencia</title>
+<meta name="description" content="Mapa interactivo de promoción y prevención en salud mental de la infancia y la adolescencia: conceptos, casos simulados y flujogramas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: 'Work Sans', system-ui, sans-serif; background: #FAF8F3; color: #2B2A28; }
+  a { color: #2F6F68; } a:hover { color: #1F4F4A; }
+  h1, h2, h3, .serif { font-family: 'Fraunces', Georgia, serif; }
+  .btn-reset { background: none; border: none; padding: 0; margin: 0; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+  .page-pad { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 24px; box-sizing: border-box; }
+  .concepts-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
+  @media (max-width: 920px) { .concepts-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  @media (max-width: 620px) { .concepts-grid { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) { .page-pad { padding-left: 16px !important; padding-right: 16px !important; } }
+  .card-btn { display: flex; flex-direction: column; gap: 12px; background: #FFFFFF; border: 1px solid #E7E2D6; border-radius: 18px; padding: 22px; min-height: 196px; width: 100%; box-shadow: 0 1px 2px rgba(43,42,40,0.04); transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  .card-btn:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(43,42,40,0.10); }
+  .card-btn:focus-visible { outline: 3px solid #2F6F68; outline-offset: 2px; }
+  .tab-btn { padding: 10px 18px; border-radius: 999px; font-size: 14px; font-weight: 600; }
+  .opt-btn { border: 1.5px solid #D9D3C3; border-radius: 12px; padding: 14px 16px; background: #FFFDF9; font-size: 15px; line-height: 1.5; width: 100%; }
+  .opt-btn:hover { border-color: #2F6F68; background: #F1F6F4; }
+  .icon-btn { width: 40px; height: 40px; border-radius: 999px; display: flex; align-items: center; justify-content: center; background: #F1EEE6; }
+  .icon-btn:hover { background: #E7E2D6; }
+  .modal-overlay { position: fixed; inset: 0; background: rgba(31,35,34,0.55); display: flex; align-items: center; justify-content: center; padding: 20px; box-sizing: border-box; z-index: 50; }
+  .modal-panel { width: min(760px, 100%); max-height: 88vh; overflow-y: auto; background: #FFFFFF; border-radius: 22px; padding: 30px; box-sizing: border-box; box-shadow: 0 24px 60px rgba(20,20,18,0.28); }
+  .flow-scroll { overflow-x: auto; max-width: 100%; padding-bottom: 8px; }
+</style>
+</head>
+<body>
+
+<div style="width: 100%; min-height: 100vh; box-sizing: border-box; padding-bottom: 64px">
+
+  <!-- HERO -->
+  <div class="page-pad" style="padding-top: 48px; padding-bottom: 8px">
+    <div style="display: flex; flex-wrap: wrap; gap: 32px; align-items: center">
+      <div style="flex: 999 1 420px; min-width: 0">
+        <div style="display: inline-block; background: #E4F1EE; color: #1F4F4A; font-size: 13px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; margin-bottom: 14px">Competencias en salud pública</div>
+        <h1 class="serif" style="margin: 0 0 14px; font-size: clamp(28px, 4vw, 44px); font-weight: 600; line-height: 1.15; color: #1F2322">Promoción y prevención en salud mental de la infancia y la adolescencia</h1>
+        <p style="margin: 0; font-size: 17px; line-height: 1.6; color: #44433F; max-width: 640px">Un mapa interactivo de los conceptos que todo profesional de la salud debería dominar: haz clic en cada recuadro para ver su definición, pon a prueba tu criterio clínico simulando casos y revisa los flujogramas de decisión.</p>
+      </div>
+      <div style="flex: 1 1 220px; min-width: 220px; display: flex; gap: 14px; justify-content: center">
+        <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+          <div style="width:72px; height:72px; border-radius:999px; background:#6E5A9C; display:flex; align-items:center; justify-content:center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none"><path d="M12 21s-6.7-4.35-9.3-8.28C1.1 10.6 1 8.9 2.1 7.3 3.4 5.4 6.1 5 8 6.3c1 .7 1.7 1.7 2 2.4.3-.7 1-1.7 2-2.4 1.9-1.3 4.6-.9 5.9 1 .1.1.2.3.3.4 1 1.9.9 3.6-.3 5.4C18.7 16.65 12 21 12 21z" fill="#FFFFFF"/></svg>
+          </div>
+          <span style="font-size:12px; color:#6b6a65; font-weight:600">Bienestar</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+          <div style="width:72px; height:72px; border-radius:999px; background:#3C6E91; display:flex; align-items:center; justify-content:center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="9" r="2.6"/><circle cx="17" cy="9" r="2.6"/><circle cx="12" cy="9" r="2.6"/><path d="M3 19c0-2.8 1.8-4.5 4-4.5s4 1.7 4 4.5"/><path d="M13 19c0-2.8 1.8-4.5 4-4.5s4 1.7 4 4.5"/></svg>
+          </div>
+          <span style="font-size:12px; color:#6b6a65; font-weight:600">Comunidad</span>
+        </div>
+        <div style="display:flex; flex-direction:column; align-items:center; gap:8px">
+          <div style="width:72px; height:72px; border-radius:999px; background:#B85C45; display:flex; align-items:center; justify-content:center">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="3,17 9,11 13,15 21,5"/><polyline points="15,5 21,5 21,11"/></svg>
+          </div>
+          <span style="font-size:12px; color:#6b6a65; font-weight:600">Crecimiento</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex; flex-wrap: wrap; gap: 14px; margin: 32px 0 4px">
+      <div style="flex: 1 1 220px; background:#1F4F4A; color:#F3F7F6; border-radius: 16px; padding: 16px 18px">
+        <div class="serif" style="font-size: 26px; font-weight: 700">1 de cada 7</div>
+        <div style="font-size: 13px; opacity: 0.9">adolescentes de 10 a 19 años tiene un trastorno mental (OMS, 2025)</div>
+      </div>
+      <div style="flex: 1 1 220px; background:#6E5A9C; color:#F6F4FA; border-radius: 16px; padding: 16px 18px">
+        <div class="serif" style="font-size: 26px; font-weight: 700">50 %</div>
+        <div style="font-size: 13px; opacity: 0.9">de los trastornos mentales comienza antes de los 14 años</div>
+      </div>
+      <div style="flex: 1 1 220px; background:#3C6E91; color:#F2F7FA; border-radius: 16px; padding: 16px 18px">
+        <div class="serif" style="font-size: 26px; font-weight: 700">x4</div>
+        <div style="font-size: 13px; opacity: 0.9">se cuadruplicó la ideación suicida adolescente en Colombia (ENSM 2025 vs. 2015)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LEGEND -->
+  <div class="page-pad" style="margin-top: 28px">
+    <div style="display:flex; flex-wrap: wrap; gap: 10px; align-items:center">
+      <span style="font-size: 13px; color:#6b6a65; font-weight:600; margin-right: 4px">Dominios:</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#E4F1EE; color:#1F4F4A; font-weight:600">Fundamentos</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#ECE7F6; color:#4C3F70; font-weight:600">Salud mental y desarrollo</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#E3EEF5; color:#2A4E66; font-weight:600">Marco global y normativo</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#F5E7E1; color:#833F2D; font-weight:600">Clínica y prevención</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#E7F0E9; color:#365C42; font-weight:600">Entornos y talento humano</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#F3ECDD; color:#6B5126; font-weight:600">Promoción vs. prevención en profundidad</span>
+      <span style="font-size:13px; padding:5px 12px; border-radius:999px; background:#F6E8EE; color:#6B2F49; font-weight:600">Práctica y formación interactiva</span>
+    </div>
+  </div>
+
+  <!-- CARD GRID -->
+  <div class="page-pad" style="margin-top: 20px">
+    <div class="concepts-grid" id="cardsGrid"></div>
+  </div>
+
+  <!-- FOOTER / CRISIS LINES -->
+  <div class="page-pad" style="margin-top: 40px">
+    <div style="background:#E7F0E9; border-radius:20px; padding: 28px; display:flex; flex-wrap:wrap; gap:24px; align-items:center">
+      <div style="width:56px; height:56px; border-radius:999px; background:#365C42; display:flex; align-items:center; justify-content:center; flex-shrink:0">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l7 3v6c0 5-3 8-7 9-4-1-7-4-7-9V5z"/><path d="M9 12l2 2 4-4"/></svg>
+      </div>
+      <div style="flex: 999 1 420px; min-width: 0">
+        <h3 class="serif" style="margin:0 0 6px; font-size:18px; font-weight:600; color:#1F2322">Líneas de ayuda en Colombia</h3>
+        <p style="margin:0; font-size:14px; line-height:1.6; color:#3C4A40">Línea 106 (orientación a niños, niñas y adolescentes) · Línea 141 del ICBF (protección de NNA) · Línea 192 opción 4 (Ministerio de Salud, orientación en salud mental) · Línea 123 (emergencias). Verifica además la línea departamental vigente de tu territorio.</p>
+      </div>
+    </div>
+    <p style="font-size:12px; color:#9A968A; margin-top:18px; text-align:center">Contenido con fines académicos, elaborado a partir de marcos de la OMS, la OPS, UNICEF y la normativa colombiana, y de los textos "Promoción y prevención de la salud desde la psicología" (Sanjuán y Rueda, Síntesis) y "Diferencias entre promoción y prevención en salud mental".</p>
+  </div>
+
+</div>
+
+<div id="modalRoot"></div>
+
+<script>
+(function () {
+  'use strict';
+
+  var TAB_ON = function (bg, fg) { return 'background:' + bg + ';color:' + fg; };
+  var TAB_OFF = 'background:#F1EEE6;color:#6b6a65';
+
+  var CONCEPTS = [
+    { id:'promocion', num:'01', category:'Fundamentos', color:'#2F6F68', colorTint:'#E4F1EE', colorText:'#1F4F4A', flowId:'flowPromocion', flowTabLabel:'Ver conceptos clave',
+      title:'Promoción de la salud',
+      teaser:'El proceso que permite a las personas aumentar el control sobre su salud: la Carta de Ottawa y sus tres estrategias.',
+      paragraphs:[
+        'La promoción de la salud es el proceso que permite a las personas y comunidades aumentar el control sobre su salud para mejorarla, construyendo bienestar físico, mental y social más allá de la ausencia de enfermedad.',
+        'Toca cada botón para conocer la definición de la OMS, la Carta de Ottawa, sus tres estrategias y los conceptos de empoderamiento y capital social.'
+      ]
+    },
+    { id:'prevencion', num:'02', category:'Fundamentos', color:'#2F6F68', colorTint:'#E4F1EE', colorText:'#1F4F4A', flowId:'flowNivelesPrevencion', flowTabLabel:'Ver niveles',
+      title:'Niveles de prevención de la enfermedad',
+      teaser:'Primaria, secundaria y terciaria: tres momentos distintos para actuar antes, durante y después de la enfermedad.',
+      paragraphs:[
+        'Prevenir es actuar para impedir o retrasar la aparición de un problema de salud, para detectarlo a tiempo o para reducir sus consecuencias una vez instaurado. Se distinguen tradicionalmente tres niveles.',
+        'Toca cada nivel —primaria, secundaria y terciaria— para ver su objetivo y un ejemplo en salud mental.'
+      ]
+    },
+    { id:'determinantes', num:'03', category:'Fundamentos', color:'#2F6F68', colorTint:'#E4F1EE', colorText:'#1F4F4A', flowId:'flowDeterminantes', flowTabLabel:'Ver modelo ecológico',
+      title:'Determinantes de la salud y modelo ecológico',
+      teaser:'La salud no depende solo de decisiones individuales: estilos de vida, entorno y contexto social actúan juntos.',
+      paragraphs:[
+        'El estado de salud de una persona resulta de la interacción entre sus estilos de vida y sus condiciones ambientales, organizadas en capas concéntricas según el modelo ecológico de Bronfenbrenner.',
+        'Toca cada botón para explorar los estilos de vida, las condiciones ambientales y las cinco capas del modelo ecológico: individuo, familia, escuela, comunidad y sociedad.'
+      ]
+    },
+    { id:'habilidades', num:'04', category:'Fundamentos', color:'#2F6F68', colorTint:'#E4F1EE', colorText:'#1F4F4A', flowId:'flowHabilidades', flowTabLabel:'Ver gráfico de habilidades',
+      title:'Habilidades para la vida y educación para la salud',
+      teaser:'Las competencias personales —toma de decisiones, autoestima, manejo del estrés— que sostienen una vida saludable.',
+      paragraphs:[
+        'Las habilidades para la vida son competencias interpersonales, cognitivas y emocionales que permiten afrontar con eficacia las exigencias de la vida cotidiana. La educación para la salud es el conjunto de estrategias que crea oportunidades de aprendizaje para desarrollarlas.',
+        'Explora el gráfico: las ocho habilidades descritas por la OMS se agrupan en tres grandes categorías. Son el puente entre la promoción (que construye capacidades) y la prevención (que reduce riesgos específicos).'
+      ]
+    },
+    { id:'continuo', num:'05', category:'Salud mental y desarrollo', color:'#6E5A9C', colorTint:'#ECE7F6', colorText:'#4C3F70', flowId:'flowContinuo', flowTabLabel:'Ver el continuo',
+      title:'Salud mental: concepto y continuo',
+      teaser:'La salud mental no es solo ausencia de trastorno: es un estado de bienestar que se mueve en un continuo.',
+      paragraphs:[
+        'La salud mental no equivale a la ausencia de enfermedad: es un estado de bienestar que se mueve en un continuo, no en categorías cerradas.',
+        'Toca cada botón para ver la definición de la OMS y los cuatro puntos del continuo, del bienestar al trastorno diagnosticable.'
+      ]
+    },
+    { id:'curso_vida', num:'06', category:'Salud mental y desarrollo', color:'#6E5A9C', colorTint:'#ECE7F6', colorText:'#4C3F70', flowId:'flowCursoVida', flowTabLabel:'Ver curso de vida',
+      title:'Curso de vida, neurodesarrollo y experiencias adversas (ACE)',
+      teaser:'La infancia y la adolescencia son ventanas de máxima plasticidad cerebral: lo que ocurre ahí moldea toda la vida adulta.',
+      paragraphs:[
+        'La infancia y la adolescencia son ventanas de máxima plasticidad cerebral: lo que ocurre ahí moldea toda la vida adulta, para bien o para mal.',
+        'Toca cada botón para explorar la ventana de desarrollo, las experiencias adversas (ACE) y los factores que protegen frente a ellas.'
+      ]
+    },
+    { id:'marco_global', num:'07', category:'Marco global y normativo', color:'#3C6E91', colorTint:'#E3EEF5', colorText:'#2A4E66', flowId:'flowMarcoGlobal', flowTabLabel:'Ver marco global',
+      title:'Marco global: OMS, OPS y UNICEF',
+      teaser:'Las grandes hojas de ruta internacionales que orientan la salud mental de la infancia y la adolescencia.',
+      paragraphs:[
+        'Varias hojas de ruta internacionales orientan la salud mental de la infancia y la adolescencia, desde la OMS hasta la OPS y UNICEF.',
+        'Toca cada botón para ver el Plan de Acción de la OMS, la guía HAT, la iniciativa LIVE LIFE, el programa mhGAP y los datos regionales de la OPS y UNICEF.'
+      ]
+    },
+    { id:'epidemiologia', num:'08', category:'Marco global y normativo', color:'#3C6E91', colorTint:'#E3EEF5', colorText:'#2A4E66', flowId:'flowEpidemiologia', flowTabLabel:'Ver línea de tiempo',
+      title:'Epidemiología en Colombia',
+      teaser:'Lo que muestran las cifras nacionales: una brecha amplia entre el malestar de niños y adolescentes y la atención que reciben.',
+      paragraphs:[
+        'Las cifras nacionales muestran una brecha amplia entre el malestar de niños, niñas y adolescentes y la atención que reciben, con una tendencia creciente en los indicadores de riesgo suicida.',
+        'Explora la línea de tiempo: toca cada punto para ver el dato completo, desde la línea base de 2015 hasta los hallazgos más recientes de la ENSM 2025.'
+      ]
+    },
+    { id:'normativo', num:'09', category:'Marco global y normativo', color:'#3C6E91', colorTint:'#E3EEF5', colorText:'#2A4E66', flowId:'flowNormativo', flowTabLabel:'Ver leyes y rutas',
+      title:'Marco normativo colombiano',
+      teaser:'Las leyes y rutas que obligan a actuar: de la protección integral de la infancia a la ruta de promoción y mantenimiento de la salud.',
+      paragraphs:[
+        'Colombia cuenta con un marco normativo amplio, de leyes y resoluciones, que respalda la promoción y la prevención en salud mental de la infancia y la adolescencia.',
+        'El reto no es la falta de normas, sino su implementación y articulación intersectorial entre salud, educación, el Instituto Colombiano de Bienestar Familiar (ICBF) y los entes territoriales. Toca cada ley o ruta en el flujograma para ver su información básica.'
+      ]
+    },
+    { id:'etapas', num:'10', category:'Clínica y prevención', color:'#B85C45', colorTint:'#F5E7E1', colorText:'#833F2D', caseId:'caseEtapas',
+      title:'Desarrollo por etapas y señales de alerta',
+      teaser:'Cada etapa tiene tareas propias del desarrollo: reconocer cuándo una conducta deja de ser esperable para la edad es una competencia clínica central.',
+      paragraphs:[
+        'Primera infancia (0-5 años): las tareas son el apego seguro, la regulación emocional con apoyo del adulto, el lenguaje y el juego simbólico. Son señales de alerta la ausencia de sonrisa social a los 3 meses, la falta de contacto visual, la pérdida de habilidades ya adquiridas o las conductas sexualizadas impropias para la edad.',
+        'Infancia (6-11 años): las tareas son el aprendizaje escolar, el sentido de competencia y las amistades. Alertan la caída brusca del rendimiento, el rechazo escolar, las quejas somáticas recurrentes sin causa médica, el aislamiento marcado o las expresiones de desesperanza.',
+        'Adolescencia (12-17 años): las tareas son la identidad, la autonomía y la pertenencia a los pares. El sistema de recompensa madura antes que la corteza prefrontal, lo que explica una mayor búsqueda de sensaciones. Alertan la tristeza o irritabilidad persistente por más de dos semanas, las autolesiones, las ideas o planes de muerte, el consumo frecuente o en soledad y las conductas alimentarias restrictivas.',
+        'La competencia clave del profesional de la salud es distinguir lo esperable para la edad de lo que exige una valoración más profunda, y actuar con la misma seriedad frente a cualquier señal de riesgo vital, sin esperar "a ver si se le pasa".',
+        'Pon a prueba esta competencia con el botón "Simular caso".'
+      ]
+    },
+    { id:'niveles_intervencion', num:'11', category:'Clínica y prevención', color:'#B85C45', colorTint:'#F5E7E1', colorText:'#833F2D', flowId:'flowNivelesIntervencion',
+      title:'Niveles de intervención: universal, selectiva, indicada y posvención',
+      teaser:'No toda la población necesita el mismo nivel de intervención: así se escalona la prevención de la conducta suicida.',
+      paragraphs:[
+        'Las estrategias de prevención se escalonan según el nivel de riesgo de la población a la que se dirigen. La intervención universal llega a toda la población, independientemente de su riesgo: por ejemplo, programas de habilidades socioemocionales en toda la escuela o la restricción de medios letales en los hogares.',
+        'La intervención selectiva se dirige a grupos con mayor riesgo por su situación, aunque no presenten aún síntomas: víctimas de violencia sexual, adolescentes LGBTIQ+, población indígena, niños y niñas bajo protección del ICBF o con un familiar fallecido por suicidio.',
+        'La intervención indicada se dirige a personas que ya muestran signos tempranos de riesgo: por ejemplo, preguntar directamente por ideas de suicidio (preguntar no induce la conducta), construir un plan de seguridad con el adolescente y su familia, y garantizar el seguimiento activo dentro de las 72 horas posteriores a un intento.',
+        'La posvención llega después de un suicidio consumado en la comunidad, para apoyar a compañeros y familiares y reducir el riesgo de contagio.',
+        'Usa el botón "Ver flujograma" para ver cómo se relacionan estos cuatro niveles.'
+      ]
+    },
+    { id:'tamizaje', num:'12', category:'Clínica y prevención', color:'#B85C45', colorTint:'#F5E7E1', colorText:'#833F2D', caseId:'caseHeeadsss', flowId:'flowTamizaje',
+      title:'Tamizaje y entrevista HEEADSSS',
+      teaser:'El tamizaje solo es ético si existe una ruta de atención: aprende el flujo mínimo y practica la entrevista con un adolescente.',
+      paragraphs:[
+        'El tamizaje solo es ético y útil si existe una ruta de atención para los casos positivos: un instrumento positivo indica riesgo y obliga a una valoración clínica, nunca es en sí mismo un diagnóstico.',
+        'La entrevista HEEADSSS es una entrevista psicosocial estructurada para adolescentes, realizada en un espacio confidencial a solas con el o la joven, que explora: Hogar, Educación y empleo, Alimentación, Actividades, Drogas, Sexualidad, Suicidio y depresión, y Seguridad (violencias, entorno digital). Antes de iniciar se explican los límites de la confidencialidad: esta se rompe únicamente ante riesgo para la vida o abuso.',
+        'Ante cualquier tamizaje positivo de depresión debe evaluarse siempre el riesgo suicida. Si el riesgo es alto, no se deja sola a la persona y se activa de inmediato la ruta de urgencias y de salud mental. Si es moderado o bajo, se construye un plan de seguridad, se inicia intervención psicosocial y se agenda control en menos de dos semanas.',
+        'Explora el flujograma para visualizar esta secuencia de decisiones, y practica la entrevista con el botón "Simular caso".'
+      ]
+    },
+    { id:'prevencion_problema', num:'13', category:'Clínica y prevención', color:'#B85C45', colorTint:'#F5E7E1', colorText:'#833F2D', flowId:'flowPrevencionProblema', flowTabLabel:'Ver por problemática',
+      title:'Prevención por problemática específica',
+      teaser:'Depresión, ansiedad, consumo de sustancias, violencias, acoso escolar, trastornos alimentarios y uso de pantallas: estrategias con evidencia para cada una.',
+      paragraphs:[
+        'Cada problemática específica —depresión, ansiedad, consumo de sustancias, violencias, acoso escolar, trastornos alimentarios y uso de pantallas— tiene señales de alerta y estrategias de prevención propias, con evidencia específica.',
+        'Toca cada problemática en el flujograma para ver sus señales, su estrategia de prevención y el instrumento de tamizaje recomendado.'
+      ]
+    },
+    { id:'entornos', num:'14', category:'Entornos y talento humano', color:'#4F7A5B', colorTint:'#E7F0E9', colorText:'#365C42', flowId:'flowEntornos', flowTabLabel:'Ver por entorno',
+      title:'Acciones por entornos y rol del talento humano en salud',
+      teaser:'La promoción y la prevención se juegan en el hogar, la escuela, la comunidad, los servicios de salud y el entorno digital, con el médico general como primer contacto.',
+      paragraphs:[
+        'La promoción y la prevención se juegan en varios entornos de la vida de niños, niñas y adolescentes —el hogar, la escuela, la comunidad y los servicios de salud— y dependen del talento humano que trabaja en cada uno, con el médico general como primer contacto.',
+        'Toca cada entorno en el flujograma para ver las acciones concretas que le corresponden.'
+      ]
+    },
+    { id:'evolucion', num:'15', category:'Promoción vs. prevención en profundidad', color:'#9C7A3C', colorTint:'#F3ECDD', colorText:'#6B5126', flowId:'flowEvolucion', flowTabLabel:'Ver línea de tiempo',
+      title:'Evolución histórica de los conceptos',
+      teaser:'De Sigerist a la Carta de Ginebra: cómo promoción y prevención pasaron de ser una sola idea a dos campos reconocidos y complementarios.',
+      paragraphs:[
+        'La prevención nació en la medicina y la epidemiología, centrada en la enfermedad; la promoción se consolidó después, en la salud pública y las ciencias sociales, centrada en la salud y sus determinantes. En salud mental, ambas tradiciones convergen con claridad desde la década de 2000.',
+        'Explora la línea de tiempo: toca cada hito, de 1945 a 2021, para ver cómo promoción y prevención pasaron de ser una sola idea a dos campos reconocidos y complementarios.'
+      ]
+    },
+    { id:'paradigmas', num:'16', category:'Promoción vs. prevención en profundidad', color:'#9C7A3C', colorTint:'#F3ECDD', colorText:'#6B5126', flowId:'flowParadigmas',
+      title:'Paradigmas de fondo: salutogénesis, patogénesis y el modelo de los dos continuos',
+      teaser:'La diferencia más profunda no está en las actividades, sino en la pregunta de partida: qué enferma, o qué mantiene sano.',
+      paragraphs:[
+        'La diferencia más profunda entre promoción y prevención no está en las actividades que realizan, sino en la pregunta de la que parten: qué enferma a las personas, o qué las mantiene sanas. Dos paradigmas de fondo —patogénico y salutogénico— y un modelo que los conecta —los dos continuos de Keyes— explican por qué.',
+        'Explora el flujograma interactivo: toca cada tarjeta para descubrir el paradigma patogénico y el salutogénico, los cuatro estados posibles del modelo de los dos continuos, y la diferencia entre el modelo de déficit y el modelo de activos.'
+      ]
+    },
+    { id:'dimensiones', num:'17', category:'Promoción vs. prevención en profundidad', color:'#9C7A3C', colorTint:'#F3ECDD', colorText:'#6B5126', flowId:'flowDimensiones',
+      title:'Diferencias dimensión por dimensión',
+      teaser:'Objeto, pregunta, punto de partida, población, lenguaje e indicadores: distintas maneras de reconocer si una acción es promoción o prevención.',
+      paragraphs:[
+        'Promoción y prevención comparten el fin último de cuidar la salud mental, pero se diferencian en varias dimensiones: el objeto que persiguen, la pregunta de la que parten, la población a la que se dirigen, el lenguaje que usan, sus indicadores y el riesgo de estigma que implican.',
+        'Estas diferencias son de énfasis, no categorías absolutamente separadas: una misma actividad puede ser promoción o prevención según para quién se realice y cuál sea su objetivo. Toca cada dimensión en el flujograma para comparar ambos campos lado a lado.'
+      ]
+    },
+    { id:'espectro', num:'18', category:'Promoción vs. prevención en profundidad', color:'#9C7A3C', colorTint:'#F3ECDD', colorText:'#6B5126', flowId:'flowEspectro',
+      title:'Complementariedad y el espectro continuo de intervenciones',
+      teaser:'Promoción y prevención no compiten: se superponen y se refuerzan, dentro de un mismo espectro que va del bienestar de toda la población al tratamiento especializado.',
+      paragraphs:[
+        'Promoción y prevención son distintas en su lógica, pero en la práctica se solapan y se potencian: la promoción crea condiciones para que la prevención funcione, y la prevención protege los logros de la promoción al detectar y atender a tiempo.',
+        'El informe del NRC y el IOM (2009) organiza las intervenciones en salud mental como un espectro continuo. Toca cada etapa del flujograma para ver cómo cambian la población destinataria, la intensidad de la intervención y el protagonismo de cada sector a medida que se avanza.'
+      ]
+    },
+    { id:'confusiones', num:'19', category:'Promoción vs. prevención en profundidad', color:'#9C7A3C', colorTint:'#F3ECDD', colorText:'#6B5126', flowId:'flowConfusiones',
+      title:'Confusiones frecuentes y aplicación en la consulta clínica',
+      teaser:'De "promoción es dar charlas" a "prevenir es asustar": los errores más comunes, y cómo un mismo profesional puede hacer promoción y prevención en una sola consulta.',
+      paragraphs:[
+        'La mayoría de los errores nace de tratar la promoción como una forma suave de prevención, o de confundir informar con promover. Reconocerlos es clave para aplicar bien ambos campos en la consulta.',
+        'Explora el flujograma: toca cada mito para ver por qué es impreciso, y descubre cómo un mismo profesional puede hacer promoción y prevención en un mismo encuentro, y cómo se financia cada campo en Colombia.'
+      ]
+    },
+    { id:'conceptos_fundamentales', num:'20', category:'Práctica y formación interactiva', color:'#9C4F6E', colorTint:'#F6E8EE', colorText:'#6B2F49', caseId:'caseConceptos', caseTabLabel:'Jugar trivia',
+      title:'Conceptos fundamentales de la promoción: trivia interactiva',
+      teaser:'Bienestar, desarrollo de capacidades, fortalecimiento de recursos, participación, entornos saludables y factores protectores: pon a prueba si sabes reconocerlos en la práctica.',
+      paragraphs:[
+        'La promoción de la salud mental se apoya en seis conceptos fundamentales que conviene distinguir en la práctica, más allá de su definición de manual: el bienestar (sentido vital y satisfacción, no solo ausencia de enfermedad), el desarrollo de capacidades (habilidades emocionales, cognitivas y sociales), el fortalecimiento de recursos (el modelo de activos: apoyarse en lo que ya existe), la participación (voz y decisión real de niños, niñas y adolescentes), los entornos saludables (espacios físicos y sociales protectores) y los factores protectores (condiciones específicas que amortiguan la adversidad).',
+        'Pon a prueba tu capacidad de reconocerlos en situaciones concretas con el botón "Jugar trivia": cada pregunta describe una escena real y tú decides qué concepto la explica mejor.'
+      ]
+    },
+    { id:'escenarios_pyp', num:'21', category:'Práctica y formación interactiva', color:'#9C4F6E', colorTint:'#F6E8EE', colorText:'#6B2F49', stationsId:'stationsEscenarios',
+      title:'Escenarios de promoción y prevención: las 4 estaciones',
+      teaser:'Familia, escuela, comunidad y servicios de salud: en cada entorno hay acciones concretas de promoción y de prevención, con su propio ejemplo y su propia pregunta para el aula.',
+      paragraphs:[
+        'La promoción y la prevención no ocurren solo en el consultorio: se juegan en cuatro grandes escenarios de la vida de niños, niñas y adolescentes, cada uno con su propia dinámica protectora o de riesgo.',
+        'Explora cada estación con el botón "Ver escenarios": familia, escuela, comunidad y servicios de salud, con lo que se puede promover, lo que se debe prevenir, un ejemplo concreto y una pregunta para reflexionar en clase.'
+      ]
+    },
+    { id:'curso_vida_pyp', num:'22', category:'Práctica y formación interactiva', color:'#9C4F6E', colorTint:'#F6E8EE', colorText:'#6B2F49', stationsId:'stationsEtapas',
+      title:'Promoción y prevención según el momento del curso de vida',
+      teaser:'Primera infancia, infancia, adolescencia temprana y adolescencia media y tardía: lo que conviene promover y prevenir cambia en cada etapa.',
+      paragraphs:[
+        'Cada momento del curso de vida tiene tareas propias del desarrollo, y por eso las prioridades de promoción y de prevención cambian de una etapa a otra: lo que protege a un bebé de 2 años no es igual a lo que protege a un adolescente de 16.',
+        'Explora cada etapa con el botón "Ver etapas": primera infancia (0-5 años), infancia (6-11 años), adolescencia temprana (12-14 años) y adolescencia media y tardía (15 a 17/18 años), con lo que se puede promover, lo que se debe prevenir y una pregunta clave para cada momento.'
+      ]
+    }
+  ];
+
+  var CASES = {
+    caseEtapas: {
+      intro: 'Para cada viñeta, decide si describe una conducta esperable para la edad o una señal de alerta que requiere valoración.',
+      summary: 'La clave no es memorizar una lista de conductas, sino diferenciar lo esperable para cada edad de lo que señala un posible problema de salud mental, y actuar sin minimizar las señales de riesgo vital.',
+      steps: [
+        { prompt: 'Niño de 3 años que hace rabietas intensas varias veces por semana cuando se le contraría. ¿Qué es esto?',
+          options: [
+            { text:'Conducta esperable para la edad', correct:true, feedback:'Correcto. Las rabietas intensas y frecuentes son esperables hasta alrededor de los 4 años, mientras el niño desarrolla autorregulación. Serían señal de alerta si persisten con la misma intensidad después de esa edad.' },
+            { text:'Señal de alerta que requiere valoración', correct:false, feedback:'No es lo más probable. Antes de los 4 años, las rabietas frecuentes forman parte del desarrollo típico; preocuparía que fueran muy intensas y persistentes después de esa edad.' }
+          ]
+        },
+        { prompt: 'Niño de 9 años cuyo rendimiento escolar cae bruscamente en un mes, se queja de dolores de estómago sin causa médica y evita ir al colegio. ¿Qué es esto?',
+          options: [
+            { text:'Conducta esperable para la edad', correct:false, feedback:'Revísalo de nuevo: la caída brusca del rendimiento junto con quejas somáticas y rechazo escolar son señales de alerta descritas para la infancia (6-11 años) y ameritan indagar qué está pasando (acoso, dificultades de aprendizaje, situación familiar).' },
+            { text:'Señal de alerta que requiere valoración', correct:true, feedback:'Correcto. Esta combinación de caída del rendimiento, quejas somáticas y rechazo escolar es una señal de alerta típica de la infancia y debe valorarse, indagando por ejemplo acoso escolar, dificultades de aprendizaje o un problema en el hogar.' }
+          ]
+        },
+        { prompt: 'Adolescente de 15 años que se aísla un poco más de sus padres, prefiere estar con amigos y cuestiona reglas familiares. ¿Qué es esto?',
+          options: [
+            { text:'Conducta esperable para la edad', correct:true, feedback:'Correcto. La búsqueda de autonomía, la mayor cercanía con pares y el cuestionamiento de normas son tareas típicas del desarrollo adolescente. Sería señal de alerta si se acompaña de tristeza persistente, aislamiento extremo, autolesiones o ideas de muerte.' },
+            { text:'Señal de alerta que requiere valoración', correct:false, feedback:'No necesariamente: buscar autonomía y cercanía con los pares es parte normal del desarrollo adolescente. La alerta aparece cuando se suman síntomas como tristeza persistente, aislamiento extremo o autolesiones.' }
+          ]
+        }
+      ]
+    },
+    caseHeeadsss: {
+      intro: 'Acompaña esta consulta de adolescencia y elige en cada paso la conducta clínica más adecuada.',
+      summary: 'El flujo clave es: tamizaje positivo → valoración clínica inmediata → evaluación del riesgo suicida → plan de acción según el nivel de riesgo. Puedes revisarlo visualmente en "Ver flujograma".',
+      steps: [
+        { prompt: 'Llega a tu consulta una adolescente de 16 años, acompañada de su madre, por "dolores de cabeza frecuentes". ¿Cuál es el primer paso correcto antes de iniciar la entrevista HEEADSSS?',
+          options: [
+            { text:'Pedirle a la madre que se quede en el consultorio para no omitir información', correct:false, feedback:'No es lo recomendado. La entrevista HEEADSSS debe realizarse en un espacio confidencial a solas con la adolescente, explicando antes los límites de la confidencialidad (esta se rompe solo ante riesgo vital o abuso).' },
+            { text:'Pedir amablemente a la madre que espere afuera y explicar a la adolescente los límites de la confidencialidad', correct:true, feedback:'Correcto. El espacio confidencial a solas, con los límites de la confidencialidad explicados desde el inicio, es condición para que la adolescente responda con honestidad.' }
+          ]
+        },
+        { prompt: 'Durante la entrevista, la adolescente cuenta que en las últimas tres semanas se siente "muy triste e irritable casi todos los días", perdió el interés en actividades que antes disfrutaba y duerme mal. ¿Qué haces a continuación?',
+          options: [
+            { text:'Programar una cita de seguimiento en un mes para ver si mejora', correct:false, feedback:'Revísalo: ante un tamizaje positivo de síntomas depresivos siempre debe evaluarse el riesgo suicida en la misma consulta, no aplazarse.' },
+            { text:'Evaluar el riesgo suicida preguntando directamente por ideas de muerte', correct:true, feedback:'Correcto. Ante cualquier tamizaje positivo de depresión debe evaluarse siempre el riesgo suicida. Preguntar directamente por ideas de suicidio no induce la conducta; al contrario, permite detectarla.' }
+          ]
+        },
+        { prompt: 'La adolescente reconoce que en ocasiones ha pensado "sería más fácil no estar", sin un plan concreto ni fecha, y sin intento previo. ¿Cuál es la conducta adecuada?',
+          options: [
+            { text:'Como no tiene plan ni intento previo, no se requiere ninguna acción adicional', correct:false, feedback:'No es correcto: la ideación pasiva sin plan corresponde a un riesgo moderado, que sí requiere acción. No implica ausencia de riesgo.' },
+            { text:'Riesgo moderado: construir un plan de seguridad con ella y su familia, iniciar intervención psicosocial y citar control en menos de dos semanas', correct:true, feedback:'Correcto. Este es el manejo recomendado para riesgo moderado o bajo: plan de seguridad, intervención psicosocial y seguimiento cercano, muy distinto del riesgo alto (con plan o intento), que exige no dejar sola a la persona y activar urgencias de inmediato.' }
+          ]
+        }
+      ]
+    },
+    caseConceptos: {
+      intro: 'Para cada situación, identifica cuál de los seis conceptos fundamentales de la promoción de la salud mental ilustra mejor.',
+      summary: 'Bienestar, desarrollo de capacidades, fortalecimiento de recursos, participación, entornos saludables y factores protectores son los seis conceptos fundamentales que sostienen cualquier estrategia de promoción de la salud mental: reconocerlos en la práctica es tan importante como memorizar su definición.',
+      steps: [
+        { prompt: 'Un adolescente que, además de no tener ningún diagnóstico, siente que su vida tiene sentido, disfruta sus actividades diarias y se siente con energía. ¿Qué concepto describe mejor su estado?',
+          options: [
+            { text:'Bienestar', correct:true, feedback:'Correcto. El bienestar no es solo la ausencia de enfermedad: es un estado de satisfacción, sentido vital y energía, que la OMS sitúa en el centro de la salud mental.' },
+            { text:'Factor protector', correct:false, feedback:'No exactamente. Un factor protector es una condición (por ejemplo, un vínculo afectivo seguro) que ayuda a lograr el bienestar, pero no es el estado de bienestar en sí.' }
+          ]
+        },
+        { prompt: 'Un programa escolar le enseña a cada estudiante a identificar sus emociones, tomar decisiones y resolver conflictos de forma asertiva. ¿Qué concepto ilustra mejor este programa?',
+          options: [
+            { text:'Desarrollo de capacidades', correct:true, feedback:'Correcto. El desarrollo de capacidades consiste en fortalecer habilidades concretas —emocionales, cognitivas y sociales— que la persona pueda usar durante toda su vida, no solo transmitir información.' },
+            { text:'Participación', correct:false, feedback:'No es lo más preciso. La participación implica que la persona tenga voz y decida activamente; aquí el énfasis está en enseñar habilidades, que es desarrollo de capacidades.' }
+          ]
+        },
+        { prompt: 'Un centro de salud identifica que una familia cuenta con una abuela cercana, una red de vecinos solidaria y acceso a un parque seguro, y trabaja apoyándose en esos recursos en lugar de solo señalar sus carencias. ¿Qué concepto describe esta estrategia?',
+          options: [
+            { text:'Fortalecimiento de recursos', correct:true, feedback:'Correcto. Fortalecer recursos —personales, familiares y comunitarios— es el modelo de activos: en lugar de partir solo de las carencias, se identifican y potencian los apoyos ya existentes.' },
+            { text:'Entornos saludables', correct:false, feedback:'No es la mejor opción. Un entorno saludable es el lugar físico y social donde ocurre la vida de la persona; aquí el foco está en los recursos y apoyos disponibles, no en el entorno en sí.' }
+          ]
+        },
+        { prompt: 'Un colegio crea un comité donde los propios estudiantes proponen y deciden las actividades de bienestar que se realizarán durante el año. ¿Qué concepto refleja mejor esta práctica?',
+          options: [
+            { text:'Participación', correct:true, feedback:'Correcto. La participación implica que niños, niñas y adolescentes tengan voz activa y poder real de decisión sobre lo que les afecta, no solo que reciban servicios diseñados por adultos.' },
+            { text:'Bienestar', correct:false, feedback:'No es lo más preciso. El bienestar es el resultado esperado; aquí lo central es el mecanismo —que los estudiantes decidan— que corresponde al concepto de participación.' }
+          ]
+        },
+        { prompt: 'Un municipio instala parques seguros, garantiza transporte escolar y promueve espacios libres de violencia en los barrios. ¿Qué concepto describe mejor esta acción?',
+          options: [
+            { text:'Entornos saludables', correct:true, feedback:'Correcto. Los entornos saludables son los espacios físicos y sociales —hogar, escuela, comunidad— diseñados o adaptados para proteger y favorecer la salud mental de quienes viven en ellos.' },
+            { text:'Factores protectores', correct:false, feedback:'Están relacionados, pero un entorno saludable es el espacio en su conjunto; un factor protector es un elemento más específico dentro de ese entorno (por ejemplo, un adulto significativo).' }
+          ]
+        },
+        { prompt: 'Pese a vivir en un barrio con muchas dificultades, un adolescente cuenta con un docente que confía en él y lo acompaña de forma constante, lo cual reduce su riesgo de desarrollar un trastorno. ¿Qué concepto ilustra mejor a este docente?',
+          options: [
+            { text:'Factor protector', correct:true, feedback:'Correcto. Un factor protector es una condición —como la presencia de un adulto estable y cálido— que amortigua el impacto de la adversidad y reduce el riesgo de que aparezca un problema de salud mental.' },
+            { text:'Desarrollo de capacidades', correct:false, feedback:'No es lo más preciso: aquí el foco está en una condición externa que protege (el vínculo con el docente), no en una habilidad que el propio adolescente desarrolla.' }
+          ]
+        }
+      ]
+    }
+  };
+
+  var FLOWS = {
+    flowNiveles: '' +
+      '<div style="position: relative; width: 920px; height: 280px">' +
+      '<div style="position:absolute; left:40px; top:16px; font-size:16px; font-weight:700; color:#1F2322">Tres momentos de la prevención</div>' +
+      '<div style="position:absolute; left:40px; top:92px; width:240px; height:140px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E4F1EE; border:1px solid #BFDAD4; border-radius:14px; font-size:14px; color:#1F4F4A"><span><b>Prevención primaria</b><br>Antes de que aparezca el problema</span></div>' +
+      '<div style="position:absolute; left:340px; top:92px; width:240px; height:140px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#ECE7F6; border:1px solid #D2C7EA; border-radius:14px; font-size:14px; color:#4C3F70"><span><b>Prevención secundaria</b><br>Detección y tratamiento tempranos (tamizaje)</span></div>' +
+      '<div style="position:absolute; left:640px; top:92px; width:240px; height:140px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#F5E7E1; border:1px solid #E6C6B6; border-radius:14px; font-size:14px; color:#833F2D"><span><b>Prevención terciaria</b><br>Reducir consecuencias del problema ya instaurado</span></div>' +
+      '<svg width="60" height="8" viewBox="0 0 60 8" preserveAspectRatio="none" style="position:absolute; left:280px; top:158px; width:60px; height:8px; overflow:visible; fill:none; stroke:#2F6F68; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah1" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#2F6F68" stroke="none"/></marker></defs><path d="M 0 4 L 60 4" marker-end="url(#ah1)"></path></svg>' +
+      '<svg width="60" height="8" viewBox="0 0 60 8" preserveAspectRatio="none" style="position:absolute; left:580px; top:158px; width:60px; height:8px; overflow:visible; fill:none; stroke:#2F6F68; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah2" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#2F6F68" stroke="none"/></marker></defs><path d="M 0 4 L 60 4" marker-end="url(#ah2)"></path></svg>' +
+      '</div>',
+    flowTamizaje: '' +
+      '<div style="position: relative; width: 950px; height: 580px">' +
+      '<div style="position:absolute; left:240px; top:20px; width:280px; height:80px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#ECE7F6; border:1px solid #D2C7EA; border-radius:12px; font-size:13.5px; color:#4C3F70"><b>Tamizaje positivo</b></div>' +
+      '<svg width="8" height="40" viewBox="0 0 8 40" preserveAspectRatio="none" style="position:absolute; left:376px; top:100px; width:8px; height:40px; overflow:visible; fill:none; stroke:#2F6F68; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah3" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#2F6F68" stroke="none"/></marker></defs><path d="M 4 0 L 4 40" marker-end="url(#ah3)"></path></svg>' +
+      '<div style="position:absolute; left:230px; top:140px; width:300px; height:80px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E4F1EE; border:1px solid #BFDAD4; border-radius:12px; font-size:13.5px; color:#1F4F4A"><b>Valoración clínica inmediata</b><br>(guía mhGAP)</div>' +
+      '<svg width="8" height="40" viewBox="0 0 8 40" preserveAspectRatio="none" style="position:absolute; left:376px; top:220px; width:8px; height:40px; overflow:visible; fill:none; stroke:#2F6F68; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah4" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#2F6F68" stroke="none"/></marker></defs><path d="M 4 0 L 4 40" marker-end="url(#ah4)"></path></svg>' +
+      '<div style="position:absolute; left:270px; top:260px; width:220px; height:100px; box-sizing:border-box; display:flex; align-items:center; justify-content:center; text-align:center; background:#F5E7E1; clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%); font-size:13px; color:#833F2D; padding: 0 30px"><b>¿Riesgo suicida alto?</b></div>' +
+      '<svg width="80" height="8" viewBox="0 0 80 8" preserveAspectRatio="none" style="position:absolute; left:490px; top:306px; width:80px; height:8px; overflow:visible; fill:none; stroke:#B85C45; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah5" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#B85C45" stroke="none"/></marker></defs><path d="M 0 4 L 80 4" marker-end="url(#ah5)"></path></svg>' +
+      '<div style="position:absolute; left:515px; top:282px; width:30px; text-align:center; font-size:12px; font-weight:700; color:#833F2D">Sí</div>' +
+      '<div style="position:absolute; left:570px; top:260px; width:280px; height:100px; box-sizing:border-box; padding:12px; display:flex; align-items:center; justify-content:center; text-align:center; background:#F5E7E1; border:1px solid #E6C6B6; border-radius:12px; font-size:13.5px; color:#833F2D"><b>Riesgo alto:</b>&nbsp;no dejar sola a la persona; activar urgencias y la ruta de salud mental</div>' +
+      '<svg width="8" height="60" viewBox="0 0 8 60" preserveAspectRatio="none" style="position:absolute; left:376px; top:360px; width:8px; height:60px; overflow:visible; fill:none; stroke:#4F7A5B; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah6" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#4F7A5B" stroke="none"/></marker></defs><path d="M 4 0 L 4 60" marker-end="url(#ah6)"></path></svg>' +
+      '<div style="position:absolute; left:392px; top:382px; width:34px; text-align:center; font-size:12px; font-weight:700; color:#365C42">No</div>' +
+      '<div style="position:absolute; left:220px; top:420px; width:320px; height:110px; box-sizing:border-box; padding:12px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E7F0E9; border:1px solid #CBDFCF; border-radius:12px; font-size:13.5px; color:#365C42"><b>Riesgo moderado o bajo:</b>&nbsp;plan de seguridad, intervención psicosocial y control en menos de 2 semanas</div>' +
+      '</div>',
+    flowNivelesIntervencion: '' +
+      '<div style="position: relative; width: 800px; height: 668px">' +
+      '<div style="position:absolute; left:160px; top:20px; width:480px; height:110px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E7F0E9; border:1px solid #CBDFCF; border-radius:14px; font-size:14px; color:#365C42"><span><b>Universal</b><br>Toda la población, sin distinción de riesgo (habilidades socioemocionales, restricción de medios letales)</span></div>' +
+      '<svg width="8" height="56" viewBox="0 0 8 56" preserveAspectRatio="none" style="position:absolute; left:396px; top:130px; width:8px; height:56px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah7" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 4 0 L 4 56" marker-end="url(#ah7)"></path></svg>' +
+      '<div style="position:absolute; left:160px; top:186px; width:480px; height:110px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E3EEF5; border:1px solid #C3DBE8; border-radius:14px; font-size:14px; color:#2A4E66"><span><b>Selectiva</b><br>Grupos con mayor riesgo por su situación (víctimas de violencia, NNA en protección del ICBF)</span></div>' +
+      '<svg width="8" height="56" viewBox="0 0 8 56" preserveAspectRatio="none" style="position:absolute; left:396px; top:296px; width:8px; height:56px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah8" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 4 0 L 4 56" marker-end="url(#ah8)"></path></svg>' +
+      '<div style="position:absolute; left:160px; top:352px; width:480px; height:110px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#F5E7E1; border:1px solid #E6C6B6; border-radius:14px; font-size:14px; color:#833F2D"><span><b>Indicada</b><br>Personas con signos tempranos de riesgo (ideación suicida, plan de seguridad, seguimiento a 72 horas)</span></div>' +
+      '<svg width="8" height="56" viewBox="0 0 8 56" preserveAspectRatio="none" style="position:absolute; left:396px; top:462px; width:8px; height:56px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah9" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 4 0 L 4 56" marker-end="url(#ah9)"></path></svg>' +
+      '<div style="position:absolute; left:160px; top:518px; width:480px; height:110px; box-sizing:border-box; padding:14px; display:flex; align-items:center; justify-content:center; text-align:center; background:#ECE7F6; border:1px solid #D2C7EA; border-radius:14px; font-size:14px; color:#4C3F70"><span><b>Posvención</b><br>Tras un suicidio en la comunidad: apoyo a compañeros y familia para reducir el contagio</span></div>' +
+      '</div>',
+    flowEspectro: '' +
+      '<div style="position: relative; width: 1070px; height: 240px">' +
+      '<div style="position:absolute; left:20px; top:14px; font-size:16px; font-weight:700; color:#1F2322">El espectro continuo de intervenciones (NRC-IOM, 2009)</div>' +
+      '<button type="button" class="btn-reset" style="position:absolute; left:20px; top:70px; width:150px; height:100px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E7F0E9; border:1px solid #CBDFCF; border-radius:12px; font-size:12.5px; font-weight:600; color:#365C42" data-reveal="espectro_promocion">Promoción</button>' +
+      '<svg width="26" height="8" viewBox="0 0 26 8" preserveAspectRatio="none" style="position:absolute; left:170px; top:116px; width:26px; height:8px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah10" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 0 4 L 26 4" marker-end="url(#ah10)"></path></svg>' +
+      '<button type="button" class="btn-reset" style="position:absolute; left:196px; top:70px; width:150px; height:100px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E4F1EE; border:1px solid #BFDAD4; border-radius:12px; font-size:12.5px; font-weight:600; color:#1F4F4A" data-reveal="espectro_universal">Prevención universal</button>' +
+      '<svg width="26" height="8" viewBox="0 0 26 8" preserveAspectRatio="none" style="position:absolute; left:346px; top:116px; width:26px; height:8px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah11" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 0 4 L 26 4" marker-end="url(#ah11)"></path></svg>' +
+      '<button type="button" class="btn-reset" style="position:absolute; left:372px; top:70px; width:150px; height:100px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#E3EEF5; border:1px solid #C3DBE8; border-radius:12px; font-size:12.5px; font-weight:600; color:#2A4E66" data-reveal="espectro_selectiva">Prevención selectiva</button>' +
+      '<svg width="26" height="8" viewBox="0 0 26 8" preserveAspectRatio="none" style="position:absolute; left:522px; top:116px; width:26px; height:8px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah12" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 0 4 L 26 4" marker-end="url(#ah12)"></path></svg>' +
+      '<button type="button" class="btn-reset" style="position:absolute; left:548px; top:70px; width:150px; height:100px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#F5E7E1; border:1px solid #E6C6B6; border-radius:12px; font-size:12.5px; font-weight:600; color:#833F2D" data-reveal="espectro_indicada">Prevención indicada</button>' +
+      '<svg width="26" height="8" viewBox="0 0 26 8" preserveAspectRatio="none" style="position:absolute; left:698px; top:116px; width:26px; height:8px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah13" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 0 4 L 26 4" marker-end="url(#ah13)"></path></svg>' +
+      '<button type="button" class="btn-reset" style="position:absolute; left:724px; top:70px; width:150px; height:100px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#ECE7F6; border:1px solid #D2C7EA; border-radius:12px; font-size:12.5px; font-weight:600; color:#4C3F70" data-reveal="espectro_tratamiento">Tratamiento</button>' +
+      '<svg width="26" height="8" viewBox="0 0 26 8" preserveAspectRatio="none" style="position:absolute; left:874px; top:116px; width:26px; height:8px; overflow:visible; fill:none; stroke:#9A968A; stroke-width:2; stroke-linecap:round; stroke-linejoin:round"><defs><marker id="ah14" orient="auto" markerWidth="5" markerHeight="5" refX="3.2" refY="2" overflow="visible"><path d="M0 0 L4 2 L0 4 Z" fill="#9A968A" stroke="none"/></marker></defs><path d="M 0 4 L 26 4" marker-end="url(#ah14)"></path></svg>' +
+      '<button type="button" class="btn-reset" style="position:absolute; left:900px; top:70px; width:150px; height:100px; box-sizing:border-box; padding:10px; display:flex; align-items:center; justify-content:center; text-align:center; background:#F1EEE6; border:1px solid #DED8C8; border-radius:12px; font-size:12.5px; font-weight:600; color:#5B5A54" data-reveal="espectro_mantenimiento">Mantenimiento</button>' +
+      '<div style="position:absolute; left:20px; top:192px; width:1030px; text-align:center; font-size:13px; color:#6b6a65">↓ población destinataria&nbsp;&nbsp;&nbsp;&nbsp;↑ intensidad y costo por persona&nbsp;&nbsp;&nbsp;&nbsp;foco: de la salud a la enfermedad</div>' +
+      '</div>'
+  };
+
+  var NODES_BY_FLOW = {
+    flowParadigmas: { nodes: [
+      { key:'patogenico', label:'Paradigma patogénico', sublabel:'Fundamento de la prevención', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Estudia los orígenes de la enfermedad, clasifica a las personas como sanas o enfermas, y busca eliminar o reducir los factores de riesgo mediante la epidemiología de la enfermedad. Es el fundamento de la prevención.' },
+      { key:'salutogenico', label:'Paradigma salutogénico', sublabel:'Fundamento de la promoción', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'Antonovsky (1979) propone que la salud es un continuo entre bienestar y malestar, no una dicotomía. Los estresores son inevitables; lo decisivo es cómo se afrontan. El sentido de coherencia —comprensibilidad, manejabilidad y significatividad— explica por qué algunas personas se mantienen sanas en la adversidad. Antonovsky lo resumía con la metáfora del río: la prevención saca a la gente del agua antes de que se ahogue; la salutogénesis enseña a nadar y mejora el río mismo.' },
+      { key:'completa', label:'Salud mental completa', sublabel:'Sin trastorno + bienestar', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Una persona sin trastorno diagnosticado y con bienestar: propósito, vitalidad y funcionamiento pleno. Es el estado que busca expandir la promoción.' },
+      { key:'languidecimiento', label:'Languidecimiento', sublabel:'Sin trastorno, sin bienestar', bg:'#F1EEE6', border:'#9A968A', color:'#5B5A54',
+        text:'Sin un trastorno diagnosticado, pero también sin propósito ni vitalidad. Según Keyes, se puede languidecer sin estar enfermo — y esto ya implica mayor riesgo de desarrollar un trastorno en el futuro.' },
+      { key:'trastorno_bienestar', label:'Trastorno con bienestar', sublabel:'Con trastorno, en recuperación', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'Una persona con un diagnóstico que, pese a ello, funciona bien y mantiene bienestar —por ejemplo, en recuperación—. Es destinataria legítima de la promoción, no solo de la prevención o el tratamiento.' },
+      { key:'trastorno_malestar', label:'Trastorno con malestar', sublabel:'El estado más grave', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Un trastorno diagnosticado junto con bajo bienestar: el estado más grave dentro del modelo de los dos continuos, y el que exige la intervención terapéutica más intensiva.' },
+      { key:'deficit_activos', label:'Modelo de déficit vs. modelo de activos', sublabel:'Dos lentes complementarias', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'El modelo de déficit, propio de la prevención, identifica necesidades y carencias. El modelo de activos (Morgan y Ziglio, 2007), propio de la promoción, identifica y potencia los recursos y fortalezas ya existentes. Ambos son necesarios: el de déficit sin el de activos genera dependencia y estigma; el de activos sin el de déficit puede pasar por alto necesidades urgentes.' }
+    ] },
+    flowDimensiones: { nodes: [
+      { key:'objeto', label:'Objeto', sublabel:'Qué busca cada una', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'La promoción tiene como objeto fortalecer el bienestar y las capacidades de personas y comunidades, exista o no un riesgo. La prevención tiene como objeto reducir la probabilidad de aparición, progresión o consecuencias de un problema concreto.' },
+      { key:'pregunta', label:'Pregunta de partida', sublabel:'Qué se preguntan', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'La promoción parte de una concepción positiva de la salud y se pregunta qué genera y mantiene el bienestar. La prevención parte de la identificación de factores de riesgo y se pregunta qué causa el trastorno y cómo evitarlo.' },
+      { key:'poblacion', label:'Población', sublabel:'A quién se dirige', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'La promoción puede dirigirse a toda la población, incluidas las personas con un trastorno ya diagnosticado, sin requerir que exista enfermedad. La prevención se organiza según el nivel de riesgo (universal, selectiva o indicada) y siempre se relaciona con un problema específico.' },
+      { key:'lenguaje', label:'Lenguaje', sublabel:'Cómo se nombra', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'La promoción usa un lenguaje de bienestar, fortalezas y florecimiento. La prevención usa un lenguaje de riesgo, síntoma y caso.' },
+      { key:'indicadores', label:'Indicadores', sublabel:'Cómo se mide', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'La promoción se evalúa con medidas de bienestar subjetivo (escalas como WHO-5, WEMWBS o la escala de florecimiento de Keyes), capital social y clima escolar. La prevención se evalúa con incidencia, prevalencia, tasa de suicidio o edad de inicio del consumo.' },
+      { key:'estigma', label:'Riesgo de estigma', sublabel:'Cómo se percibe', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'El riesgo de estigma es bajo en la promoción, y mayor en las estrategias selectiva e indicada de la prevención. Importante: estas diferencias son de énfasis, no categorías absolutamente separadas — una misma actividad puede ser promoción o prevención según para quién se realiza y cuál es su objetivo. En una frase: la promoción busca construir salud mental; la prevención busca evitar o disminuir el riesgo de perderla.' }
+    ] },
+    flowEspectro: { nodes: [
+      { key:'espectro_promocion', label:'Promoción', text:'Actúa sobre determinantes sociales y atraviesa todo el espectro: incluso las personas en tratamiento o rehabilitación se benefician de entornos que promueven su bienestar. Una ley que prohíbe el castigo físico es, a la vez, promoción (crea un entorno de buen trato) y prevención primordial (elimina un factor de riesgo).' },
+      { key:'espectro_universal', label:'Prevención universal', text:'Comparte población y métodos con la promoción: un programa de habilidades socioemocionales para todo un colegio promueve bienestar y, a la vez, reduce la incidencia de depresión, ansiedad y consumo.' },
+      { key:'espectro_selectiva', label:'Prevención selectiva', text:'Se dirige a grupos con mayor riesgo por su situación, antes de que aparezcan síntomas: la población se reduce frente al nivel universal, pero la intensidad de la intervención aumenta.' },
+      { key:'espectro_indicada', label:'Prevención indicada', text:'Se dirige a personas que ya muestran signos tempranos de riesgo: la población es aún más pequeña, pero la intensidad y el costo por persona son mayores, y el protagonismo empieza a concentrarse en el sector salud.' },
+      { key:'espectro_tratamiento', label:'Tratamiento', text:'El foco pasa de la salud a la enfermedad: interviene cuando ya existe un trastorno diagnosticado, con el sector salud como protagonista principal.' },
+      { key:'espectro_mantenimiento', label:'Mantenimiento', text:'Sostiene la recuperación y previene recaídas. El informe del NRC y el IOM (2009) organiza así todo el espectro: a medida que se avanza, la población destinataria se reduce y la intensidad y el costo por persona aumentan.' }
+    ] },
+    flowConfusiones: { nodes: [
+      { key:'charlas', label:'"Promoción es dar charlas"', sublabel:'Mito frecuente', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Dar una charla es solo una de las cinco áreas de Ottawa: informar no cambia por sí solo conductas ni entornos. Una charla sobre depresión cuyo objetivo es reconocer síntomas y evitar un trastorno es, en realidad, prevención o alfabetización en salud mental, no promoción.' },
+      { key:'sin_enfermos', label:'"Si no hay enfermos, hay salud mental"', sublabel:'Mito frecuente', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Según el modelo de Keyes, se puede languidecer sin tener un diagnóstico: la ausencia de trastorno no equivale a bienestar.' },
+      { key:'no_es_para_trastorno', label:'"La promoción no es para personas con un trastorno"', sublabel:'Mito frecuente', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Pueden florecer y beneficiarse igual de entornos favorables: un diagnóstico no excluye a nadie de la promoción.' },
+      { key:'asustar', label:'"Prevenir es asustar"', sublabel:'Mito frecuente', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Las campañas de miedo sobre drogas o suicidio no funcionan y pueden dañar; la evidencia respalda estrategias de habilidades y entornos protectores, no el miedo.' },
+      { key:'mas_tamizaje', label:'"Más tamizaje es mejor prevención"', sublabel:'Mito frecuente', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Sin una ruta de atención garantizada, el tamizaje genera daño y frustración: un instrumento positivo exige respuesta clínica real.' },
+      { key:'misma_consulta', label:'¿Se puede hacer ambas en una sola consulta?', sublabel:'Para la práctica clínica', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'Sí: en la anamnesis, preguntar tanto por fortalezas e intereses (promoción) como por factores de riesgo (prevención). En la valoración, atender el bienestar y el funcionamiento además de aplicar tamizajes como el PHQ-A o la HEEADSSS. En la consejería, reforzar el sueño, el juego y los vínculos, y a la vez construir un plan de seguridad si el riesgo lo exige. En el seguimiento, vincular a actividades comunitarias además de controlar síntomas y derivar cuando sea necesario.' },
+      { key:'financiacion', label:'¿Quién financia cada campo en Colombia?', sublabel:'Marco normativo', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'La promoción recae principalmente en los entes territoriales a través del Plan de Intervenciones Colectivas (PIC) y de los presupuestos de educación, cultura y deporte. La prevención se financia de forma compartida —colectiva por el PIC e individual a cargo de las EPS— dentro de las rutas integrales de atención. La Resolución 4886 de 2018 incluso las separa en ejes distintos: eje 1 (promoción de la convivencia y la salud mental en los entornos) y eje 2 (prevención de los problemas y trastornos mentales).' }
+    ] },
+    flowEpidemiologia: { isTimeline: true, nodes: [
+      { key:'epi_2015', year:'2015', label:'ENSM 2015 — línea base', border:'#3C6E91', bg:'#E3EEF5',
+        text:'La Encuesta Nacional de Salud Mental de 2015 estableció los niveles de ideación suicida adolescente que después sirvieron como punto de comparación.' },
+      { key:'epi_inicio_consumo', year:'13,7 años', label:'Edad media de inicio del consumo', border:'#B85C45', bg:'#F5E7E1',
+        text:'La edad media de inicio del consumo de sustancias psicoactivas en Colombia es de 13,7 años, lo que sitúa la prevención desde la primaria.' },
+      { key:'epi_2024', year:'2024', label:'287 suicidios de niños, niñas y adolescentes', border:'#B85C45', bg:'#F5E7E1',
+        text:'Se registraron 287 suicidios de niños, niñas y adolescentes en Colombia, el 78 % entre los 14 y 17 años.' },
+      { key:'epi_2025', year:'2025', label:'ENSM 2025: la ideación suicida se cuadruplicó', border:'#3C6E91', bg:'#E3EEF5',
+        text:'Uno de cada 20 adolescentes de 12 a 17 años reportó ideación suicida en el último mes —4 veces más que en 2015—. El 10,4 % tiene un probable trastorno emocional, pero menos del 3 % cuenta con diagnóstico de depresión o ansiedad: la mayoría no está identificada.' },
+      { key:'epi_genero', year:'Brecha de género', label:'Las adolescentes triplican la ideación suicida', border:'#6E5A9C', bg:'#ECE7F6',
+        text:'Las adolescentes triplican la ideación suicida y concentran las autolesiones, mientras que el suicidio consumado es más frecuente en hombres.' },
+      { key:'epi_determinante', year:'Determinante', label:'Las violencias como determinante modificable', border:'#833F2D', bg:'#F5E7E1',
+        text:'La mayoría de las víctimas de violencia sexual son niñas y adolescentes, y el agresor suele ser un familiar o conocido: es el determinante modificable más importante.' },
+      { key:'epi_atencion', year:'Brecha de atención', label:'Persiste una gran brecha de atención', border:'#4F7A5B', bg:'#E7F0E9',
+        text:'Pese a la magnitud del problema, persiste una gran brecha de atención por barreras de oferta (escasez de psiquiatría infantil), administrativas, culturales (estigma) y geográficas (ruralidad dispersa).' }
+    ] },
+    flowEvolucion: { isTimeline: true, nodes: [
+      { key:'ev_1945', year:'1945', label:'Sigerist: cuatro tareas de la medicina', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Henry Sigerist distingue cuatro tareas de la medicina: promoción de la salud, prevención de la enfermedad, restablecimiento y rehabilitación.' },
+      { key:'ev_1948', year:'1948', label:'La OMS define la salud como bienestar completo', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'La OMS define la salud como un estado completo de bienestar y no solo la ausencia de enfermedad.' },
+      { key:'ev_1958', year:'1958', label:'Jahoda: criterios de salud mental positiva', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Marie Jahoda propone los primeros criterios de salud mental positiva, antecediendo la idea de un bienestar que va más allá de no estar enfermo.' },
+      { key:'ev_1964', year:'1964', label:'Caplan lleva los tres niveles a la psiquiatría comunitaria', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Gerald Caplan traslada los niveles de prevención primaria, secundaria y terciaria a la psiquiatría comunitaria.' },
+      { key:'ev_1965', year:'1965', label:'Leavell y Clark: la promoción dentro de la prevención primaria', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Leavell y Clark sitúan la "promoción de la salud" como un componente de la prevención primaria, dentro del modelo clásico de historia natural de la enfermedad.' },
+      { key:'ev_1974', year:'1974', label:'Informe Lalonde (Canadá)', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'El Informe Lalonde introduce la idea de los determinantes de la salud más allá de la atención médica: estilo de vida, ambiente, biología y servicios de salud.' },
+      { key:'ev_1978', year:'1978', label:'Declaración de Alma-Ata', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'La Declaración de Alma-Ata impulsa la atención primaria en salud y los determinantes sociales como eje de la salud pública mundial.' },
+      { key:'ev_1979', year:'1979', label:'Antonovsky: el paradigma salutogénico', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Aaron Antonovsky formula el paradigma salutogénico, la base teórica de la promoción de la salud (ver el recuadro "Paradigmas de fondo").' },
+      { key:'ev_1986', year:'1986', label:'Carta de Ottawa: independencia de la promoción', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'La Carta de Ottawa marca la independencia definitiva de la promoción: deja de ser una actividad clínica para convertirse en una estrategia social y política.' },
+      { key:'ev_1994', year:'1994', label:'Instituto de Medicina (Mrazek y Haggerty)', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'El Instituto de Medicina restringe "prevención" a lo que ocurre antes del diagnóstico, distinguiendo los niveles universal, selectivo e indicado.' },
+      { key:'ev_2002', year:'2002', label:'Keyes: el modelo de los dos continuos', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Corey Keyes propone el modelo de los dos continuos, que separa la salud mental positiva de la enfermedad mental como dimensiones relacionadas pero independientes.' },
+      { key:'ev_2004', year:'2004', label:'La OMS separa promoción y prevención', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'La OMS publica, por primera vez por separado, "Promoting Mental Health" y "Prevention of Mental Disorders", reconociendo que son campos distintos y complementarios.' },
+      { key:'ev_2007', year:'2007', label:'Morgan y Ziglio: el modelo de activos', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'Morgan y Ziglio formulan el modelo de activos, que identifica y potencia los recursos y fortalezas ya existentes en personas y comunidades.' },
+      { key:'ev_2013', year:'2013', label:'Plan de Acción Integral sobre Salud Mental', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'La OMS adopta el Plan de Acción Integral sobre Salud Mental 2013-2030, que integra promoción y prevención como estrategias necesarias.' },
+      { key:'ev_2021', year:'2021', label:'Carta de Ginebra para el Bienestar', border:'#9C7A3C', bg:'#F3ECDD',
+        text:'La Carta de Ginebra para el Bienestar consolida la distinción y complementariedad entre promoción y prevención hasta hoy.' }
+    ] },
+    flowNormativo: { nodes: [
+      { key:'ley_1098', label:'Ley 1098 de 2006', sublabel:'Código de infancia y adolescencia', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Establece la protección integral de niños, niñas y adolescentes en Colombia, reconociéndolos como sujetos de derechos.' },
+      { key:'ley_1616', label:'Ley 1616 de 2013', sublabel:'Ley de Salud Mental', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Garantiza el derecho a la salud mental de la población colombiana, prioriza la promoción y la prevención, y crea el marco para la atención integral en salud mental.' },
+      { key:'ley_1620', label:'Ley 1620 de 2013', sublabel:'Sistema de convivencia escolar', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Crea el Sistema Nacional de Convivencia Escolar y Formación para el Ejercicio de los Derechos Humanos, la Educación para la Sexualidad y la Prevención y Mitigación de la Violencia Escolar.' },
+      { key:'ley_2460', label:'Ley 2460 de 2025', sublabel:'Actualización normativa reciente', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Norma reciente que refuerza el marco de protección y atención en salud mental de niños, niñas y adolescentes en Colombia.' },
+      { key:'politica_nacional', label:'Política Nacional de Salud Mental', sublabel:'Resolución 4886 de 2018', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'Organiza la respuesta nacional en dos ejes: eje 1, promoción de la convivencia y la salud mental en los entornos; eje 2, prevención de los problemas y trastornos mentales.' },
+      { key:'rpms', label:'Ruta Integral de Atención (RPMS)', sublabel:'Resolución 3280 de 2018', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Ordena, para cada momento del curso de vida, valoraciones de salud mental: en la primera infancia, el desarrollo y el vínculo; en la infancia, el desempeño escolar; en la adolescencia, una consulta confidencial con tamizaje de consumo y de conducta suicida.' },
+      { key:'rutas_especificas', label:'Rutas específicas de atención', sublabel:'Consumo de sustancias y violencias', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Complementan la RPMS con rutas específicas de atención en salud mental, consumo de sustancias y violencias, incluido el protocolo de atención a víctimas de violencia sexual.' },
+      { key:'sivigila', label:'Vigilancia en salud pública (Sivigila)', sublabel:'Eventos 356 y 875', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'La notificación obligatoria del intento de suicidio (evento 356) y de las violencias de género e intrafamiliar (evento 875) permite vigilar estos eventos a nivel nacional.' }
+    ] },
+    flowPrevencionProblema: { nodes: [
+      { key:'depresion', label:'Depresión', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Puede manifestarse como irritabilidad más que como tristeza, junto con quejas somáticas y caída del rendimiento. La prevención incluye activación conductual, actividad física, higiene del sueño y terapia cognitivo-conductual grupal para síntomas subclínicos. Se tamiza con el PHQ-A desde los 12 años.' },
+      { key:'ansiedad', label:'Ansiedad', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Es el trastorno más frecuente en la infancia y la adolescencia. Se previene con programas escolares de habilidades de afrontamiento, enseñanza de respiración y relajación, y evitando la sobreprotección. Se tamiza con el SCARED o el GAD-7 desde los 8 años.' },
+      { key:'consumo_sustancias', label:'Consumo de sustancias', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'El objetivo central es retrasar la edad de inicio, porque cada año de retraso reduce el riesgo de dependencia. Se trabaja con programas familiares, habilidades de rechazo y regulación de la venta de alcohol y vapeadores a menores; el tamizaje usa CRAFFT o ASSIST.' },
+      { key:'violencias_abuso', label:'Violencias y abuso sexual', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'La prevención se apoya en crianza sin castigo físico y entornos seguros; alertan las lesiones no explicadas, los cambios bruscos de conducta y las conductas sexualizadas. La respuesta exige atención como urgencia, notificación y activación de la ruta de protección.' },
+      { key:'acoso_escolar', label:'Acoso escolar y ciberacoso', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Los programas de toda la escuela (como KiVa) y el papel activo de los espectadores son las estrategias con más evidencia; alertan la negativa a ir al colegio y la ansiedad al usar el celular.' },
+      { key:'tca', label:'Trastornos de la conducta alimentaria', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'El mayor riesgo se concentra en adolescentes mujeres y en deportistas de categorías de peso; la prevención evita los comentarios sobre el peso en la familia y la escuela, y usa el cuestionario SCOFF para el tamizaje.' },
+      { key:'pantallas', label:'Uso de pantallas', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Se recomienda evitarlas antes de los 2 años, proteger el sueño (8 a 12 horas según la edad), mantener los dispositivos fuera del dormitorio por la noche y prevenir el grooming y la sextorsión con ciudadanía digital desde el currículo.' }
+    ] },
+    flowEntornos: { nodes: [
+      { key:'hogar', label:'Hogar', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'Programas de crianza positiva con metodología vivencial, visitas domiciliarias en la primera infancia, rutinas de sueño y comidas compartidas, y restricción de medios letales (medicamentos bajo llave, sin armas en casa).' },
+      { key:'entorno_educativo', label:'Entorno educativo', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'Adoptar los ocho estándares de escuela promotora de la salud de la OMS-UNESCO, un currículo socioemocional transversal, un comité escolar de convivencia activo y protocolos claros ante ideación suicida, acoso o violencia sexual.' },
+      { key:'entorno_comunitario', label:'Entorno comunitario', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'Espacios seguros de juego, deporte y cultura, gestores comunitarios que vinculan a las familias con los servicios, y plataformas de participación juvenil.' },
+      { key:'servicios_salud', label:'Servicios de salud', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'Servicios amigables para adolescentes con horarios flexibles y confidencialidad, integración de la salud mental en la consulta de crecimiento y desarrollo, y equipos de salud mental en el primer nivel con telemedicina hacia psiquiatría infantil.' },
+      { key:'medico_general', label:'Rol del médico general', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'El médico general es, en la mayoría de los casos, el primer contacto de niños, niñas y adolescentes con el sistema de salud. Sus competencias esperadas incluyen valorar el desarrollo en cada consulta, aplicar instrumentos de tamizaje, realizar la entrevista HEEADSSS, evaluar el riesgo suicida, manejar en el primer nivel los casos leves a moderados con la guía mhGAP, y saber cuándo derivar, además de cuidar su propia salud mental para prevenir el desgaste profesional.' }
+    ] },
+    flowPromocion: { nodes: [
+      { key:'oms_def', label:'Definición de la OMS', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'La Organización Mundial de la Salud define la promoción de la salud como el proceso que permite a las personas incrementar el control sobre su salud para mejorarla. No se trata solo de evitar la enfermedad, sino de construir bienestar físico, mental y social.' },
+      { key:'carta_ottawa', label:'Carta de Ottawa (1986)', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Marcó un punto de inflexión: trasladó el foco de la enfermedad a la salud, identificando cuatro objetivos centrales — una política pública saludable, entornos que favorezcan la salud, el fortalecimiento de la acción comunitaria y el desarrollo de habilidades personales.' },
+      { key:'abogacia', label:'Abogacía', sublabel:'Una de las tres estrategias', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'Generar compromiso político y apoyo social para la salud: una de las tres estrategias centrales de la promoción según la Carta de Ottawa.' },
+      { key:'movilizacion', label:'Movilización social', sublabel:'Una de las tres estrategias', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'Lograr una participación comunitaria activa y sostenida en las decisiones que afectan la salud colectiva.' },
+      { key:'educacion_salud', label:'Educación para la salud', sublabel:'Una de las tres estrategias', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'Crear oportunidades de aprendizaje que fortalezcan los conocimientos y las habilidades de las personas para cuidar su salud.' },
+      { key:'empoderamiento_capital', label:'Empoderamiento y capital social', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'El empoderamiento es el proceso por el cual personas y comunidades ganan control real sobre las decisiones que afectan su salud. El capital social son los recursos de confianza y cooperación que facilitan actuar juntos por el bienestar colectivo. Ambos conceptos acompañan siempre a la promoción.' }
+    ] },
+    flowNivelesPrevencion: { nodes: [
+      { key:'prev_primaria', label:'Prevención primaria', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Interviene antes de que el problema aparezca. Su objetivo es impedir o retrasar el inicio. La vacunación, o en salud mental el desarrollo de habilidades socioemocionales desde la infancia, son ejemplos típicos.' },
+      { key:'prev_secundaria', label:'Prevención secundaria', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'Busca detectar y tratar el problema en sus etapas iniciales, cuando aún es más fácil de manejar. Su herramienta característica es el tamizaje o cribado: por ejemplo, aplicar un cuestionario de síntomas depresivos a adolescentes para identificar casos que aún no han sido diagnosticados.' },
+      { key:'prev_terciaria', label:'Prevención terciaria', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Actúa cuando el problema ya está instaurado, para reducir sus consecuencias y evitar complicaciones. Tratar con psicoterapia a un adolescente ya diagnosticado con un trastorno de ansiedad es un ejemplo de este nivel.' }
+    ] },
+    flowDeterminantes: { nodes: [
+      { key:'estilos_vida', label:'Estilos de vida', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Patrones de alimentación y ejercicio, consumo de sustancias, prácticas sexuales y manejo del estrés: decisiones y hábitos individuales que inciden directamente en el estado de salud.' },
+      { key:'condiciones_ambientales', label:'Condiciones ambientales', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Nivel socioeconómico, entorno físico, justicia social y acceso a servicios: condiciones del contexto que interactúan con los estilos de vida para determinar la salud.' },
+      { key:'individuo', label:'Individuo', sublabel:'Modelo ecológico de Bronfenbrenner', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'El centro del modelo: el niño, niña o adolescente con sus propias características biológicas y psicológicas, inmerso en sistemas anidados que interactúan entre sí.' },
+      { key:'familia', label:'Familia', sublabel:'Modelo ecológico', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'El sistema más cercano al individuo: vínculos, crianza y dinámicas del hogar que moldean directamente el desarrollo.' },
+      { key:'escuela', label:'Escuela', sublabel:'Modelo ecológico', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'El segundo entorno cotidiano más influyente: relaciones con pares, aprendizaje y convivencia escolar.' },
+      { key:'comunidad', label:'Comunidad', sublabel:'Modelo ecológico', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'El entorno barrial y social inmediato: redes de apoyo, espacios seguros y oportunidades disponibles fuera del hogar y la escuela.' },
+      { key:'sociedad', label:'Sociedad', sublabel:'Modelo ecológico', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'El nivel más amplio: políticas públicas, normas culturales y condiciones económicas que afectan a todos los demás sistemas. Un cambio en cualquiera de estas capas repercute en las demás, por lo que las intervenciones más eficaces combinan el cambio individual con la modificación del ambiente físico y social.' }
+    ] },
+    flowHabilidades: { isPieChart: true, nodes: [
+      { key:'cognitivas', label:'Habilidades cognitivas', value:25, bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Incluyen la toma de decisiones y solución de problemas, y el pensamiento crítico y creativo: la capacidad de analizar situaciones y generar alternativas frente a los retos cotidianos.' },
+      { key:'interpersonales', label:'Habilidades interpersonales', value:25, bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'Incluyen la empatía y la comunicación asertiva: la capacidad de comprender a los demás y expresar lo que se piensa y se siente de forma clara y respetuosa.' },
+      { key:'emocionales', label:'Habilidades emocionales y de autorregulación', value:50, bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Incluyen el autoconocimiento, la autoestima, la autoeficacia y la capacidad de regular las emociones y el estrés: la base para sostener el bienestar frente a las exigencias de la vida cotidiana.' }
+    ] },
+    flowContinuo: { nodes: [
+      { key:'oms_salud_mental', label:'Definición de la OMS', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'La OMS define la salud mental como un estado de bienestar que permite a la persona afrontar el estrés habitual de la vida, desarrollar sus habilidades, aprender, trabajar y contribuir a su comunidad. En niños, niñas y adolescentes se expresa como desarrollo emocional, cognitivo y social acorde con su edad.' },
+      { key:'bienestar', label:'Bienestar', sublabel:'Punto del continuo', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'El extremo más favorable del continuo: la persona cuenta con los recursos emocionales, cognitivos y sociales para afrontar la vida cotidiana y desarrollarse plenamente.' },
+      { key:'malestar_esperable', label:'Malestar esperable', sublabel:'Punto del continuo', bg:'#F3ECDD', border:'#9C7A3C', color:'#6B5126',
+        text:'Un duelo o un estrés académico puntual: reacciones emocionales normales ante situaciones vitales, que no requieren por sí solas una intervención clínica.' },
+      { key:'problema_salud_mental', label:'Problema de salud mental', sublabel:'Punto del continuo', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Síntomas que ya afectan el funcionamiento diario de la persona, sin llegar a configurar un trastorno diagnosticable, pero que ameritan atención.' },
+      { key:'trastorno_diagnosticable', label:'Trastorno mental diagnosticable', sublabel:'Punto del continuo', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'El extremo de mayor severidad: un cuadro clínico que cumple los criterios diagnósticos establecidos y que requiere manejo clínico específico.' },
+      { key:'continuo_pyp', label:'Promoción y prevención en el continuo', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'La promoción mantiene y expande el bienestar incluso cuando no hay riesgo aparente; la prevención evita que una persona avance hacia etapas de mayor severidad. Ambas actúan en todo el continuo, no solo en sus extremos.' }
+    ] },
+    flowCursoVida: { nodes: [
+      { key:'ventana_plasticidad', label:'Ventana de plasticidad cerebral', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'La mitad de los trastornos mentales comienza antes de los 14 años, y tres cuartas partes antes de los 24. La niñez y la adolescencia son periodos de máxima plasticidad cerebral.' },
+      { key:'moldeadores', label:'Qué moldea la arquitectura cerebral', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'El apego, el estrés tóxico, las violencias, el sueño, la nutrición y las relaciones entre pares moldean la arquitectura cerebral, la regulación emocional y las trayectorias de salud en la vida adulta.' },
+      { key:'ace_definicion', label:'Experiencias adversas (ACE)', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Incluyen el abuso físico, emocional y sexual, la negligencia y la disfunción del hogar: violencia doméstica, consumo de sustancias, trastorno mental o encarcelamiento de un cuidador.' },
+      { key:'ace_efecto', label:'Efecto acumulativo y dosis-dependiente', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'A mayor número de ACE, mayor riesgo de depresión, consumo de sustancias, intento de suicidio y enfermedades crónicas en la adultez.' },
+      { key:'factor_protector', label:'El principal factor protector', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'La presencia constante de al menos un adulto estable, cálido y receptivo amortigua el efecto de las experiencias adversas.' },
+      { key:'resiliencia', label:'Resiliencia', bg:'#E7F0E9', border:'#4F7A5B', color:'#365C42',
+        text:'No es un rasgo innato, sino un proceso que surge de la interacción entre la persona y sus entornos: se construye con relaciones de apoyo, oportunidades para desarrollar competencias y un sentido de control y pertenencia.' }
+    ] },
+    flowMarcoGlobal: { nodes: [
+      { key:'plan_accion_oms', label:'Plan de Acción Integral de la OMS', sublabel:'2013-2030', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Adoptado por 194 países, fija cuatro objetivos: reforzar el liderazgo y la gobernanza, ofrecer servicios integrados en la comunidad, aplicar estrategias de promoción y prevención, y fortalecer los sistemas de información e investigación.' },
+      { key:'hat', label:'Helping Adolescents Thrive (HAT)', sublabel:'OMS-UNICEF, 2020-2021', bg:'#E3EEF5', border:'#3C6E91', color:'#2A4E66',
+        text:'Guía mundial de referencia para adolescentes de 10 a 19 años, con cuatro frentes: leyes y políticas, entornos protectores, apoyo a cuidadores e intervenciones psicosociales.' },
+      { key:'live_life', label:'Iniciativa LIVE LIFE', sublabel:'Prevención del suicidio', bg:'#F5E7E1', border:'#B85C45', color:'#833F2D',
+        text:'Propone cuatro intervenciones con eficacia demostrada: limitar el acceso a medios letales, promover una comunicación responsable en medios, desarrollar habilidades socioemocionales y garantizar la identificación y el seguimiento activo de toda persona con conducta suicida.' },
+      { key:'mhgap', label:'Programa mhGAP', sublabel:'OMS', bg:'#E4F1EE', border:'#2F6F68', color:'#1F4F4A',
+        text:'Permite que el personal de atención primaria —incluido el médico general— evalúe, maneje y derive los problemas de salud mental más frecuentes. Es el estándar para formar al talento humano en este nivel.' },
+      { key:'ops_unicef', label:'OPS y UNICEF', sublabel:'Datos regionales y globales', bg:'#ECE7F6', border:'#6E5A9C', color:'#4C3F70',
+        text:'La OPS advierte que las Américas son la única región del mundo donde la tasa de suicidio sigue en ascenso, con el mayor repunte entre los 10 y 14 años; su Comisión de Alto Nivel (2023) formuló diez recomendaciones para transformar la salud mental regional. UNICEF estima que 166 millones de adolescentes en el mundo viven con un trastorno mental.' }
+    ] }
+  };
+
+  var STATION_SETS = {
+    stationsEscenarios: {
+      tabLabel: 'Ver escenarios',
+      items: [
+        { key:'familia', title:'Familia', subtitle:'El primer entorno protector',
+          promote:['Vínculos afectivos seguros','Comunicación','Expresión emocional','Prácticas de crianza sensibles','Establecimiento de límites','Resolución no violenta de conflictos','Reconocimiento de necesidades emocionales','Participación de niños y adolescentes','Redes familiares de apoyo','Habilidades parentales'],
+          prevent:['Violencia intrafamiliar','Prácticas de crianza violentas','Negligencia','Aislamiento','Escalamiento de conflictos','Dificultades graves de comunicación','Exposición a situaciones que afecten el bienestar'],
+          example:'No es simplemente "dar una charla a padres sobre crianza", sino diseñar espacios donde los cuidadores desarrollen habilidades concretas para responder de manera sensible a las necesidades emocionales y evolutivas de sus hijos.',
+          question:'¿Qué tendría que cambiar en una familia para que ese niño tenga más recursos para enfrentar las dificultades de la vida?' },
+        { key:'escuela', title:'Escuela', subtitle:'Un lugar donde se puede enfermar o también proteger',
+          promote:['Sentido de pertenencia','Convivencia','Habilidades socioemocionales','Relaciones positivas','Participación estudiantil','Resolución de conflictos','Inclusión','Reconocimiento de emociones','Vínculos significativos con adultos','Ambientes escolares seguros'],
+          prevent:['Bullying','Violencia escolar','Exclusión','Discriminación','Aislamiento','Escalamiento de conflictos','Identificación tardía de señales de sufrimiento'],
+          example:'La prevención del bullying no es solamente "una charla sobre bullying": puede ser formación de docentes + participación estudiantil + protocolos + fortalecimiento de la convivencia + identificación temprana + redes de apoyo.',
+          question:'¿Qué tendría que cambiar en una escuela para que un adolescente pueda decir "aquí hay alguien que me escucha"?' },
+        { key:'comunidad', title:'Comunidad', subtitle:'El niño también pertenece a un territorio',
+          promote:['Participación comunitaria','Espacios seguros','Deporte','Cultura','Recreación','Redes de apoyo','Participación juvenil','Sentido de pertenencia','Liderazgo','Acceso a oportunidades'],
+          prevent:['Aislamiento social','Violencia comunitaria','Consumo problemático','Exposición a situaciones de riesgo','Exclusión','Falta de oportunidades','Debilitamiento de redes'],
+          example:'El capital social y las redes de apoyo son claves aquí: un adolescente con dificultades no debería depender exclusivamente de su capacidad individual, sino de una red que conecta familia → escuela → comunidad → salud → organizaciones.',
+          question:'¿Qué tiene este territorio que ayuda a un niño a sentirse protegido? ¿Y qué le falta?' },
+        { key:'salud', title:'Servicios de salud', subtitle:'No esperar a que el niño llegue enfermo',
+          promote:['Educación para la salud','Fortalecimiento de habilidades','Orientación a familias','Espacios de bienestar','Acompañamiento a cuidadores','Educación emocional'],
+          prevent:['Identificación de factores de riesgo','Detección temprana','Tamizaje cuando corresponda','Intervención temprana','Orientación','Activación de rutas','Seguimiento','Articulación intersectorial'],
+          example:'El modelo tradicional espera a que "el niño llegue con un problema y el psicólogo atienda". El modelo de promoción y prevención identifica necesidades → fortalece capacidades → detecta tempranamente → articula redes → interviene oportunamente. P y P no significa evitar toda consulta: también significa detectar oportunamente y evitar que una situación se agrave cuando hay señales de riesgo.',
+          question:'¿Cómo cambiaría tu consulta si, además de atender el motivo de consulta, buscaras identificar y fortalecer recursos?' }
+      ]
+    },
+    stationsEtapas: {
+      tabLabel: 'Ver etapas',
+      items: [
+        { key:'primera_infancia', title:'Primera infancia', subtitle:'0 a 5 años',
+          promote:['Vínculo afectivo seguro','Apego y relaciones sensibles','Crianza respetuosa y sensible','Regulación emocional acompañada por adultos','Juego libre y compartido','Desarrollo del lenguaje y comunicación','Estimulación adecuada','Rutinas de sueño, alimentación y cuidado','Ambientes seguros y protectores','Desarrollo de autonomía progresiva','Interacción positiva con pares','Fortalecimiento de competencias parentales','Participación de la familia en el desarrollo','Acceso a espacios de juego, cultura y recreación'],
+          prevent:['Maltrato y violencia','Negligencia','Abuso sexual','Alteraciones importantes del desarrollo','Problemas de vinculación','Exposición a violencia familiar','Dificultades graves de regulación emocional','Aislamiento social','Prácticas de crianza violentas','Detección tardía de dificultades del desarrollo'],
+          question:'¿Qué necesita un niño pequeño de los adultos para desarrollar seguridad emocional?' },
+        { key:'infancia', title:'Infancia', subtitle:'6 a 11 años',
+          promote:['Autoconcepto positivo','Autoestima y valoración personal','Habilidades socioemocionales','Regulación emocional','Resolución de problemas','Habilidades sociales','Relaciones positivas con pares','Sentido de pertenencia escolar','Participación infantil','Juego y recreación','Hábitos saludables','Comunicación familiar','Fortalecimiento de vínculos con adultos significativos','Desarrollo de autonomía'],
+          prevent:['Bullying y violencia escolar','Exclusión y discriminación','Maltrato infantil','Abuso sexual','Problemas de conducta','Dificultades emocionales persistentes','Aislamiento social','Fracaso o deserción escolar','Exposición a violencia','Identificación tardía de dificultades de aprendizaje o desarrollo','Inicio temprano de consumo de sustancias'],
+          question:'¿Qué hace que una escuela sea un lugar donde un niño se sienta seguro, capaz y perteneciente?' },
+        { key:'adol_temprana', title:'Adolescencia temprana', subtitle:'12 a 14 años',
+          promote:['Construcción de identidad','Autoconocimiento','Regulación emocional','Habilidades para afrontar problemas','Pensamiento crítico','Habilidades sociales','Relaciones saludables','Educación sexual integral','Toma de decisiones','Comunicación familiar','Participación adolescente','Sentido de pertenencia','Proyecto de vida','Uso saludable de tecnologías y redes sociales','Actividad física, recreación y ocio saludable','Fortalecimiento de redes de apoyo'],
+          prevent:['Bullying y ciberbullying','Violencias','Conductas autolesivas','Conducta suicida','Consumo de alcohol y otras sustancias','Violencia en relaciones afectivas','Riesgos asociados a sexualidad','Aislamiento social','Problemas de imagen corporal','Dificultades alimentarias','Abandono escolar','Exposición a contenidos digitales perjudiciales','Identificación tardía de problemas emocionales'],
+          question:'¿Cómo ayudamos a un adolescente a construir identidad y autonomía sin dejarlo solo frente a los riesgos?' },
+        { key:'adol_media', title:'Adolescencia media y tardía', subtitle:'15 a 17/18 años',
+          promote:['Proyecto de vida','Autonomía','Toma de decisiones','Construcción de identidad','Relaciones afectivas saludables','Sexualidad responsable','Habilidades para afrontar estrés','Regulación emocional','Resolución de conflictos','Participación social','Liderazgo juvenil','Redes de apoyo','Preparación para transición educativa/laboral','Sentido de propósito','Uso saludable de redes sociales','Fortalecimiento de capacidades para pedir ayuda'],
+          prevent:['Conducta suicida','Autolesiones','Consumo problemático de sustancias','Violencia de pareja','Violencias sexuales','Deserción escolar','Exclusión social','Embarazo no intencional','Conductas de riesgo','Problemas relacionados con imagen corporal','Aislamiento','Problemas de salud mental no detectados','Ruptura o debilitamiento de redes de apoyo'],
+          question:'¿Cómo acompañamos la autonomía y el proyecto de vida de un adolescente sin dejarlo solo frente a los riesgos de esta etapa?' }
+      ]
+    }
+  };
+
+  var state = { openId: null, view: 'definition', caseStep: 0, caseChoice: null, revealKey: null, stationIndex: 0, questionOpen: false };
+
+  function getConcept(id) {
+    for (var i = 0; i < CONCEPTS.length; i++) { if (CONCEPTS[i].id === id) return CONCEPTS[i]; }
+    return null;
+  }
+
+  function renderCards() {
+    var grid = document.getElementById('cardsGrid');
+    grid.innerHTML = CONCEPTS.map(function (c) {
+      return '' +
+        '<button type="button" class="card-btn btn-reset" data-open="' + c.id + '" aria-haspopup="dialog">' +
+          '<div style="display:flex; align-items:center; justify-content:space-between">' +
+            '<div style="width:38px; height:38px; border-radius:10px; background:' + c.colorTint + '; color:' + c.colorText + '; display:flex; align-items:center; justify-content:center; font-weight:700; font-size:14px; font-family:\'Fraunces\',serif">' + c.num + '</div>' +
+            '<span style="font-size:11px; font-weight:600; color:' + c.colorText + '; background:' + c.colorTint + '; padding:4px 10px; border-radius:999px">' + c.category + '</span>' +
+          '</div>' +
+          '<h3 class="serif" style="margin:0; font-size:19px; font-weight:600; color:#1F2322; line-height:1.3">' + c.title + '</h3>' +
+          '<p style="margin:0; font-size:14px; line-height:1.55; color:#5B5A54; flex-grow:1">' + c.teaser + '</p>' +
+          '<span style="font-size:13px; font-weight:600; color:' + c.color + '">Ver definición →</span>' +
+        '</button>';
+    }).join('');
+  }
+
+  function buildCaseBlock(concept) {
+    var caseData = CASES[concept.caseId];
+    var stepIndex = state.caseStep || 0;
+    var complete = stepIndex >= caseData.steps.length;
+    var step = complete ? null : caseData.steps[stepIndex];
+    var chosenIdx = state.caseChoice;
+    var hasFeedback = !complete && chosenIdx !== null && chosenIdx !== undefined;
+    var chosen = hasFeedback ? step.options[chosenIdx] : null;
+
+    var optionsHtml = '';
+    if (!complete && !hasFeedback) {
+      optionsHtml = '<div style="display:flex; flex-direction:column; gap:10px">' +
+        step.options.map(function (o, i) {
+          return '<button type="button" class="opt-btn btn-reset" data-opt="' + i + '">' + o.text + '</button>';
+        }).join('') +
+        '</div>';
+    }
+
+    var feedbackHtml = '';
+    if (hasFeedback) {
+      var bg = chosen.correct ? '#E7F0E9' : '#F5E7E1';
+      var border = chosen.correct ? '#4F7A5B' : '#B85C45';
+      var label = chosen.correct ? 'Correcto' : 'Para repasar';
+      var isLast = stepIndex === caseData.steps.length - 1;
+      var nextLabel = isLast ? 'Ver resultado' : 'Siguiente pregunta';
+      feedbackHtml = '<div style="background:' + bg + '; border-left: 4px solid ' + border + '; border-radius:10px; padding:16px 18px; display:flex; flex-direction:column; gap:6px">' +
+        '<span style="font-weight:700; font-size:14px; color:' + border + '">' + label + '</span>' +
+        '<p style="margin:0; font-size:14.5px; line-height:1.6; color:#33322E">' + chosen.feedback + '</p>' +
+        '<div style="margin-top:8px"><button type="button" class="btn-reset tab-btn" style="background:#2F6F68; color:#fff" data-next="1">' + nextLabel + '</button></div>' +
+        '</div>';
+    }
+
+    if (complete) {
+      return '<div style="display:flex; flex-direction:column; gap:16px">' +
+        '<p style="margin:0; font-size:14px; color:#6b6a65; font-style:italic">' + caseData.intro + '</p>' +
+        '<div style="background:#F1EEE6; border-radius:16px; padding:22px; display:flex; flex-direction:column; gap:14px">' +
+        '<h3 class="serif" style="margin:0; font-size:18px; color:#1F2322">Simulación completada</h3>' +
+        '<p style="margin:0; font-size:14.5px; line-height:1.6; color:#44433F">' + caseData.summary + '</p>' +
+        '<div><button type="button" class="btn-reset tab-btn" style="background:#2F6F68; color:#fff" data-restart="1">Reiniciar simulación</button></div>' +
+        '</div></div>';
+    }
+
+    return '<div style="display:flex; flex-direction:column; gap:16px">' +
+      '<p style="margin:0; font-size:14px; color:#6b6a65; font-style:italic">' + caseData.intro + '</p>' +
+      '<div style="font-size:13px; font-weight:600; color:#9A968A">Paso ' + (stepIndex + 1) + ' de ' + caseData.steps.length + '</div>' +
+      '<p style="margin:0; font-size:16px; line-height:1.6; color:#1F2322; font-weight:500">' + step.prompt + '</p>' +
+      optionsHtml + feedbackHtml +
+      '</div>';
+  }
+
+  function buildPieChart(flowId) {
+    var def = NODES_BY_FLOW[flowId];
+    if (!def || !def.isPieChart) return '';
+    var total = def.nodes.reduce(function (sum, n) { return sum + (n.value || 0); }, 0) || 1;
+    var R = 64;
+    var C = 2 * Math.PI * R;
+    var cumulative = 0;
+    var circles = def.nodes.map(function (n) {
+      var pct = (n.value || 0) / total * 100;
+      var length = pct / 100 * C;
+      var offset = -(cumulative / 100 * C);
+      cumulative += pct;
+      return '<circle cx="85" cy="85" r="' + R + '" fill="none" stroke="' + n.border + '" stroke-width="32" stroke-dasharray="' + length.toFixed(2) + ' ' + C.toFixed(2) + '" stroke-dashoffset="' + offset.toFixed(2) + '" transform="rotate(-90 85 85)"/>';
+    }).join('');
+    return '<div style="display:flex; justify-content:center; margin-bottom:18px">' +
+      '<svg width="170" height="170" viewBox="0 0 170 170">' + circles + '</svg>' +
+      '</div>';
+  }
+
+  function buildDiagramGrid(flowId) {
+    var def = NODES_BY_FLOW[flowId];
+    if (!def) return '';
+    var isTimeline = !!def.isTimeline;
+    var containerStyle = isTimeline
+      ? 'display:flex; flex-direction:column; gap:8px; width:100%; min-width:280px'
+      : 'display:flex; flex-wrap:wrap; gap:12px; width:100%; min-width:640px';
+    var pieHtml = def.isPieChart ? buildPieChart(flowId) : '';
+    return pieHtml + '<div style="' + containerStyle + '">' +
+      def.nodes.map(function (n) {
+        var active = state.revealKey === n.key;
+        var borderW = active ? '2.5px' : '1.5px';
+        var style = isTimeline
+          ? ('display:flex; align-items:center; gap:14px; text-align:left; box-sizing:border-box; width:100%; padding:12px 16px; border-radius:12px; background:' + n.bg + '; border-left:4px solid ' + n.border + '; border-top:' + borderW + ' solid ' + n.border + '; border-right:' + borderW + ' solid ' + n.border + '; border-bottom:' + borderW + ' solid ' + n.border + '; color:#1F2322;' + (active ? ' box-shadow:0 0 0 3px ' + n.border + '33;' : ''))
+          : ('flex:1 1 220px; text-align:center; box-sizing:border-box; padding:16px 14px; border-radius:14px; background:' + n.bg + '; border:' + borderW + ' solid ' + n.border + '; color:' + n.color + ';' + (active ? ' box-shadow:0 0 0 3px ' + n.border + '33;' : ''));
+        var yearHtml = (isTimeline && n.year) ? ('<span style="flex:0 0 auto; font-size:12.5px; font-weight:700; padding:4px 10px; border-radius:999px; background:#F1EEE6; color:#5B5A54; white-space:nowrap">' + n.year + '</span>') : '';
+        var pieSublabel = typeof n.value === 'number' ? (Math.round(n.value) + '% de las habilidades descritas') : '';
+        var sublabel = n.sublabel || pieSublabel;
+        return '<button type="button" class="btn-reset" style="' + style + '" data-reveal="' + n.key + '">' +
+          yearHtml +
+          '<span style="font-weight:700; display:block; font-size:14px; line-height:1.35; flex:1 1 auto">' + n.label + '</span>' +
+          (sublabel ? '<span style="font-size:12px; opacity:0.85; display:block; margin-top:4px">' + sublabel + '</span>' : '') +
+          '</button>';
+      }).join('') +
+      '</div>';
+  }
+
+  function buildRevealPanel(flowId) {
+    var def = NODES_BY_FLOW[flowId];
+    if (!def || !state.revealKey) return '';
+    var node = null;
+    for (var i = 0; i < def.nodes.length; i++) { if (def.nodes[i].key === state.revealKey) { node = def.nodes[i]; break; } }
+    if (!node) return '';
+    var color = node.border || '#2F6F68';
+    return '<div style="margin-top:16px; width:100%; min-width:300px; max-width:640px; box-sizing:border-box; background:#F1EEE6; border-radius:14px; padding:18px; border-left:4px solid ' + color + '">' +
+      '<h4 class="serif" style="margin:0 0 8px; font-size:16px; color:#1F2322">' + node.label + '</h4>' +
+      '<p style="margin:0; font-size:14.5px; line-height:1.6; color:#33322E">' + node.text + '</p>' +
+      '</div>';
+  }
+
+  function buildStationsBlock(concept) {
+    var stationSet = STATION_SETS[concept.stationsId];
+    var idx = Math.min(state.stationIndex || 0, stationSet.items.length - 1);
+    var item = stationSet.items[idx];
+    var tabsHtml = stationSet.items.map(function (it, i) {
+      var style = i === idx ? 'background:#2F6F68;color:#ffffff' : 'background:#F1EEE6;color:#6b6a65';
+      return '<button type="button" class="btn-reset tab-btn" style="' + style + '" data-station="' + i + '">' + it.title + '</button>';
+    }).join('');
+    var promoteHtml = item.promote.map(function (c) {
+      return '<span style="font-size:12.5px; padding:5px 11px; border-radius:999px; background:#E7F0E9; color:#365C42">' + c + '</span>';
+    }).join('');
+    var preventHtml = item.prevent.map(function (c) {
+      return '<span style="font-size:12.5px; padding:5px 11px; border-radius:999px; background:#F5E7E1; color:#833F2D">' + c + '</span>';
+    }).join('');
+    var exampleHtml = item.example ? (
+      '<div style="margin-top:16px; background:#FFF8EC; border-radius:12px; padding:14px 16px">' +
+        '<div style="font-size:12px; font-weight:700; color:#8A6A1E; margin-bottom:4px">EJEMPLO</div>' +
+        '<p style="margin:0; font-size:14px; line-height:1.6; color:#33322E">' + item.example + '</p>' +
+      '</div>'
+    ) : '';
+    var questionOpen = !!state.questionOpen;
+    var questionLabel = questionOpen ? 'Ocultar pregunta' : 'Ver pregunta para los estudiantes';
+    var questionHtml = questionOpen ? ('<p style="margin:12px 0 0; font-size:14.5px; line-height:1.6; color:#1F2322; font-weight:500; font-style:italic">' + item.question + '</p>') : '';
+
+    return '<div style="display:flex; flex-direction:column; gap:18px">' +
+      '<div style="display:flex; flex-wrap:wrap; gap:8px">' + tabsHtml + '</div>' +
+      '<div>' +
+        '<h3 class="serif" style="margin:0 0 4px; font-size:19px; font-weight:600; color:#1F2322">' + item.title + '</h3>' +
+        '<p style="margin:0 0 16px; font-size:14px; color:#6b6a65; font-style:italic">' + item.subtitle + '</p>' +
+        '<div style="display:flex; flex-wrap:wrap; gap:20px">' +
+          '<div style="flex:1 1 240px">' +
+            '<div style="font-size:12px; font-weight:700; color:#365C42; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:8px">¿Qué podemos promover?</div>' +
+            '<div style="display:flex; flex-wrap:wrap; gap:6px">' + promoteHtml + '</div>' +
+          '</div>' +
+          '<div style="flex:1 1 240px">' +
+            '<div style="font-size:12px; font-weight:700; color:#833F2D; text-transform:uppercase; letter-spacing:0.04em; margin-bottom:8px">¿Qué podemos prevenir?</div>' +
+            '<div style="display:flex; flex-wrap:wrap; gap:6px">' + preventHtml + '</div>' +
+          '</div>' +
+        '</div>' +
+        exampleHtml +
+        '<div style="margin-top:16px">' +
+          '<button type="button" class="btn-reset tab-btn" style="background:#2F6F68; color:#fff" data-question-toggle="1">' + questionLabel + '</button>' +
+          questionHtml +
+        '</div>' +
+      '</div>' +
+      '</div>';
+  }
+
+  function renderModal() {
+    var root = document.getElementById('modalRoot');
+    if (!state.openId) { root.innerHTML = ''; return; }
+    var concept = getConcept(state.openId);
+    if (!concept) { root.innerHTML = ''; return; }
+
+    var view = state.view || 'definition';
+    var showCaseTab = !!concept.caseId;
+    var showFlowTab = !!concept.flowId;
+    var showStationsTab = !!concept.stationsId;
+    if (view === 'case' && !showCaseTab) view = 'definition';
+    if (view === 'flow' && !showFlowTab) view = 'definition';
+    if (view === 'stations' && !showStationsTab) view = 'definition';
+
+    var tabDefStyle = view === 'definition' ? 'background:#2F6F68;color:#ffffff' : 'background:#F1EEE6;color:#6b6a65';
+    var tabCaseStyle = view === 'case' ? 'background:#2F6F68;color:#ffffff' : 'background:#F1EEE6;color:#6b6a65';
+    var tabFlowStyle = view === 'flow' ? 'background:#2F6F68;color:#ffffff' : 'background:#F1EEE6;color:#6b6a65';
+    var tabStationsStyle = view === 'stations' ? 'background:#2F6F68;color:#ffffff' : 'background:#F1EEE6;color:#6b6a65';
+    var caseTabLabel = concept.caseTabLabel || 'Simular caso';
+    var flowTabLabel = concept.flowTabLabel || 'Ver flujograma';
+    var stationsTabLabel = showStationsTab ? STATION_SETS[concept.stationsId].tabLabel : 'Ver escenarios';
+
+    var bodyHtml = '';
+    if (view === 'definition') {
+      bodyHtml = '<div style="display:flex; flex-direction:column; gap:14px">' +
+        concept.paragraphs.map(function (p) {
+          return '<p style="margin:0; font-size:15.5px; line-height:1.7; color:#33322E">' + p + '</p>';
+        }).join('') +
+        '</div>';
+    } else if (view === 'case') {
+      bodyHtml = buildCaseBlock(concept);
+    } else if (view === 'flow') {
+      var GRID_FLOWS = ['flowParadigmas', 'flowDimensiones', 'flowConfusiones', 'flowNormativo', 'flowPrevencionProblema', 'flowEntornos', 'flowEpidemiologia', 'flowEvolucion', 'flowPromocion', 'flowNivelesPrevencion', 'flowDeterminantes', 'flowContinuo', 'flowCursoVida', 'flowMarcoGlobal', 'flowHabilidades'];
+      var isDiagramGrid = GRID_FLOWS.indexOf(concept.flowId) !== -1;
+      var flowInner = isDiagramGrid ? buildDiagramGrid(concept.flowId) : (FLOWS[concept.flowId] || '');
+      bodyHtml = '<div class="flow-scroll">' + flowInner + '</div>' + buildRevealPanel(concept.flowId);
+    } else if (view === 'stations') {
+      bodyHtml = buildStationsBlock(concept);
+    }
+
+    root.innerHTML = '' +
+      '<div class="modal-overlay" data-overlay="1">' +
+        '<div class="modal-panel">' +
+          '<div style="display:flex; align-items:flex-start; justify-content:space-between; gap: 16px; margin-bottom: 18px">' +
+            '<div style="display:flex; align-items:center; gap:12px">' +
+              '<div style="width:40px; height:40px; border-radius:10px; background:' + concept.colorTint + '; color:' + concept.colorText + '; display:flex; align-items:center; justify-content:center; font-weight:700; font-family:\'Fraunces\',serif">' + concept.num + '</div>' +
+              '<span style="font-size:11px; font-weight:600; color:' + concept.colorText + '; background:' + concept.colorTint + '; padding:3px 10px; border-radius:999px">' + concept.category + '</span>' +
+            '</div>' +
+            '<button type="button" class="btn-reset icon-btn" data-close="1" aria-label="Cerrar">' +
+              '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#2B2A28" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>' +
+            '</button>' +
+          '</div>' +
+          '<h2 class="serif" style="margin: 0 0 18px; font-size: 25px; font-weight: 600; color:#1F2322">' + concept.title + '</h2>' +
+          '<div style="display:flex; flex-wrap:wrap; gap:8px; margin-bottom: 22px">' +
+            '<button type="button" class="btn-reset tab-btn" style="' + tabDefStyle + '" data-tab="definition">Definición</button>' +
+            (showCaseTab ? '<button type="button" class="btn-reset tab-btn" style="' + tabCaseStyle + '" data-tab="case">' + caseTabLabel + '</button>' : '') +
+            (showFlowTab ? '<button type="button" class="btn-reset tab-btn" style="' + tabFlowStyle + '" data-tab="flow">' + flowTabLabel + '</button>' : '') +
+            (showStationsTab ? '<button type="button" class="btn-reset tab-btn" style="' + tabStationsStyle + '" data-tab="stations">' + stationsTabLabel + '</button>' : '') +
+          '</div>' +
+          bodyHtml +
+        '</div>' +
+      '</div>';
+  }
+
+  function openCard(id) {
+    state.openId = id; state.view = 'definition'; state.caseStep = 0; state.caseChoice = null;
+    state.revealKey = null; state.stationIndex = 0; state.questionOpen = false;
+    renderModal();
+  }
+  function closeModal() { state.openId = null; renderModal(); }
+  function setView(v) {
+    state.view = v; state.caseStep = 0; state.caseChoice = null;
+    state.revealKey = null; state.stationIndex = 0; state.questionOpen = false;
+    renderModal();
+  }
+  function chooseOption(idx) { state.caseChoice = idx; renderModal(); }
+  function nextStep() { state.caseStep = (state.caseStep || 0) + 1; state.caseChoice = null; renderModal(); }
+  function restartCase() { state.caseStep = 0; state.caseChoice = null; renderModal(); }
+  function toggleReveal(key) { state.revealKey = (state.revealKey === key ? null : key); renderModal(); }
+  function selectStation(i) { state.stationIndex = i; state.questionOpen = false; renderModal(); }
+  function toggleQuestionOpen() { state.questionOpen = !state.questionOpen; renderModal(); }
+
+  document.addEventListener('click', function (e) {
+    var t;
+    if ((t = e.target.closest('[data-open]'))) { openCard(t.getAttribute('data-open')); return; }
+    if ((t = e.target.closest('[data-close]'))) { closeModal(); return; }
+    if ((t = e.target.closest('[data-tab]'))) { setView(t.getAttribute('data-tab')); return; }
+    if ((t = e.target.closest('[data-opt]'))) { chooseOption(parseInt(t.getAttribute('data-opt'), 10)); return; }
+    if ((t = e.target.closest('[data-next]'))) { nextStep(); return; }
+    if ((t = e.target.closest('[data-restart]'))) { restartCase(); return; }
+    if ((t = e.target.closest('[data-reveal]'))) { toggleReveal(t.getAttribute('data-reveal')); return; }
+    if ((t = e.target.closest('[data-station]'))) { selectStation(parseInt(t.getAttribute('data-station'), 10)); return; }
+    if ((t = e.target.closest('[data-question-toggle]'))) { toggleQuestionOpen(); return; }
+    if (e.target.hasAttribute && e.target.hasAttribute('data-overlay')) { closeModal(); return; }
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && state.openId) { closeModal(); }
+  });
+
+  renderCards();
+})();
+</script>
+
+</body>
+</html>
